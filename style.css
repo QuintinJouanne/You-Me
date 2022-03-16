@@ -1,4 +1,5 @@
-/*----------Main style----------*/
-body {
-  background-color: #c6ddff;
+/*-----------Main style----------*/
+:root {
+  --main-bg-color-work: #c6ddff;
+  --main-bg-color-love: #f6dddd;
 }
