@@ -1,7 +1,6 @@
 {
   "name": "you-me",
   "version": "1.0.0",
-  "description": "",
   "main": "main.js",
   "scripts": {
     "validate-all-html": "w3c-html-validator" 
@@ -21,5 +20,6 @@
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.25.4",
     "w3c-html-validator": "^1.0.3"
-  }
+  },
+  "description": ""
 }
