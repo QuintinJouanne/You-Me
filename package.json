@@ -4,7 +4,7 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "validate-all-html": "w3c-html-validator"
+    "validate-all-html": "w3c-html-validator" 
   },
   "repository": {
     "type": "git",
