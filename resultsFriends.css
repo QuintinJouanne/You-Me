@@ -1,5 +1,5 @@
 body {
-  background-color: #c6ddff;
+  background-color: #fde5b6;
   font-family: 'Kumbh Sans', sans-serif;
 }
 
@@ -23,7 +23,7 @@ body {
 
 .container2 {
   text-align: center;
-  background-color: #88b3f2;
+  background-color: #dfb462;
   border-radius: 20px;
   margin-top: 25px;
 }
@@ -40,7 +40,6 @@ body {
 .value-container {
   position: relative;
   font-size: 50px;
-  color: #231c3d;
 }
 
 .gifparent {
@@ -57,4 +56,33 @@ body {
 h2 {
   text-align: center;
   margin-top: 25px;
+}
+
+.btnsection {
+  display: flex;
+  justify-content: space-around;
+}
+
+.lovebtn {
+  height: 95px;
+  width: 95px;
+  transition: 1s;
+}
+
+.lovebtn:hover {
+  cursor: pointer;
+  height: 195px;
+  width: 195px;
+}
+
+.workbtn {
+  height: 95px;
+  width: 95px;
+  transition: 1s;
+}
+
+.workbtn:hover {
+  cursor: pointer;
+  height: 195px;
+  width: 195px;
 }
