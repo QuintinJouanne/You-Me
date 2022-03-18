@@ -1,81 +1,85 @@
 body {
-  background-color: #c6ddff;
   display: flex;
   justify-content: center;
+  flex-direction: columns;
   align-items: center;
+  background-image: url('img/Bg.png');
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
 }
 
-/*----------MainContainer style----------*/
-.mainContainer {
-  background-color: #96c0ff;
-  position: absolute;
-  width: 282px;
-  height: 459px;
-  top: 171px;
+form {
+  background-color: #fff;
+  padding: 40px 60px;
+  border-radius: 10px;
+  margin: 200px 20px 0px 20px;
   border-radius: 10px;
 }
-
-.Caracter {
-  position: absolute;
-  color: #ffffff;
-  width: 100px;
-  height: 50px;
-  background-color: #96c0ff;
-  border-radius: 10px;
-  top: -35px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  box-shadow: 5px black;
+form h1 {
+  color: #eb7371;
+  text-align: center;
 }
-
-.aboutYou {
-  color: white;
+form .social-media {
+  margin-top: -10px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  margin-top: 20px;
 }
-
-.identification {
-  color: white;
+form .social-media p {
+  padding: 5px;
+  width: 20px;
+  margin-left: 10px;
+  border-radius: 100%;
+  border: 1px solid #545454;
+  text-align: center;
+  cursor: pointer;
+  color: #545454;
+}
+form p.choose-email {
+  text-align: center;
+}
+form .inputs {
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
-  font-size: 1.5em;
-  margin-top: 20px;
-  line-height: 30px;
 }
-
-.nomBtn {
-  width: 175px;
-  height: 25px;
+form .inputs input[type='email'],
+input[type='password'] {
+  padding: 15px;
+  border: none;
   border-radius: 5px;
-  cursor: pointer;
+  background-color: #f2f2f2;
+  outline: none;
+  margin-bottom: 15px;
 }
-
-.firstNameBtn {
-  width: 175px;
-  height: 25px;
+form p.inscription {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #878787;
+}
+form p.inscription span {
+  color: #eb7371;
+}
+form button {
+  padding: 15px 25px;
   border-radius: 5px;
+  border: none;
+  font-size: 15px;
+  color: #fff;
+  background-color: #eb7371;
+  outline: none;
   cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.iconify {
-  background: url('https://api.iconify.design/bi/plus-square.svg?color=%237977db')
-    no-repeat center center / contain;
-  height: 30px;
-  margin-top: 47px;
-  margin-right: 30px;
+form button:active {
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.cple {
-  max-height: 40px;
-  margin-top: 20px;
-}
-
-.Logo {
-  display: flex;
-  justify-content: center;
-  color: #7977db;
+@media screen and (min-width: 768px) {
+  body {
+    background-image: url('img/Bg_desktop.png');
+    background-size: cover;
+  }
+  form {
+    margin-top: 400px;
+  }
 }

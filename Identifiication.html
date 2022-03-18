@@ -2,36 +2,34 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Formulaire de connexion en HTML & CSS - Frenchcoder</title>
     <link rel="stylesheet" href="ID.css" />
-    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+    />
   </head>
-    <header>
-      <div class="Logo"> 
-        <h1>You&Me</h1>
-       <img class="cple" src="img/cple.png" alt="image-couple">
-      </div>
-      <div></div>
-    </header>
   <body>
-    <div class="iconify" data-icon="bi:plus-square" style="color: #7977db;"></div>
-      <div class="mainContainer">
-        
-        <div class="Caracter">
-          <p>Pierre.G</p>
-        </div>
-        <div class="aboutYou">
-          <h1>About you</h1>
-        </div>
-        <div class="identification">
-          <p>Nom</p>
-        <button class="nomBtn"></button>
-        <p>Prénom</p>
-      <button button class="firstNameBtn"></button>
+    <form>
+      <h1>S'identifier avec</h1>
+      <div class="social-media">
+        <p><i class="fab fa-google"></i></p>
+        <p><i class="fab fa-youtube"></i></p>
+        <p><i class="fab fa-facebook-f"></i></p>
+        <p><i class="fab fa-twitter"></i></p>
       </div>
-    </div>
-  </body>
-    <script src="main.js"></script>
+      <p class="choose-email">ou utiliser mon adresse e-mail :</p>
+      <div class="inputs">
+        <input type="email" placeholder="Nom" />
+        <input type="password" placeholder="Prenom" />
+      </div>
+      <p class="inscription">
+        Je n'ai pas de <span>compte</span>. Je m'en <span>crée</span> un.
+      </p>
+      <div align="center">
+        <button id="button" type="submit">Se connecter</button>
+      </div>
+    </form>
   </body>
 </html>
