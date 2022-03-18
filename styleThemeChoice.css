@@ -11,7 +11,7 @@ body {
   align-items: center;
   min-height: 100vh;
   font-family: 'Kumbh Sans', sans-serif;
-  background-image: url(img/Bg.png);
+  background-image: url(img/Bg_mobile.png);
   background-size: cover;
 }
 
@@ -172,99 +172,13 @@ body {
   transform: translate(-50%, -50%);
   z-index: 2;
 }
-
-/*
-
-
-
-.loveImgPos1 {
-  display: block;
-  position: absolute;
-  height: 60%;
-  width: 20%;
-  left: 0;
-  z-index: 2;
-}
-
-.jobImgPos1 {
-  display: block;
-  position: absolute;
-  height: 70%;
-  width: 60%;
-  top: 70%;
-  left: 50%; 
-  transform: translate(-50%, -50%); 
-  z-index: 3;
-}
-
-.friendshipImgPos1 {
-  display: block;
-  position: absolute;
-  height: 50%;
-  width: 45%;
-  right: 0;
-  z-index: 2;
-}
-
-
-.loveImgPos2 {
-  display: block;
-  position: absolute;
-  height: 60%;
-  width: 20%;
-  right: 0;
-  z-index: 2;
-}
-
-.jobImgPos2 {
-  display: block;
-  position: absolute;
-  height: 40%;
-  width: 30%;
-  left: 0;
-  z-index: 2;
-}
-
-.friendshipImgPos2 {
-  display: block;
-  position: absolute;
-  height: 80%;
-  width: 75%;
-  right: 0;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 3;
-}
-
-.loveImgPos3 {
-  display: block;
-  position: absolute;
-  height: 90%;
-  width: 45%;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 3;
-}
-
-.jobImgPos3 {
-  display: block;
-  position: absolute;
-  height: 40%;
-  width: 30%;
-  right: 0;
-  z-index: 2;
-}
-
-.friendshipImgPos3 {
-  display: block;
-  position: absolute;
-  height: 40%;
-  width: 35%;
-  left: 0;
-  z-index: 2;
-}
-*/
 .isActive {
+}
+
+/* Médiaqueries */
+@media screen and (min-width: 540px) {
+  body {
+    background-image: url(img/Bg_desktop.png);
+    background-size: cover;
+  }
 }
