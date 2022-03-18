@@ -11,6 +11,8 @@ const imageElements = [relPro, relAmi, relAmo];
 const suivant = document.querySelector('.arrowRight');
 const precedant = document.querySelector('.arrowLeft');
 
+const bgBody = document.querySelector('body');
+
 function slidesuivante() {
   const activeElement = document.querySelector('.isActive');
 
@@ -40,6 +42,8 @@ function slidesuivante() {
     relAmo.classList.remove('loveImgPos3');
     relPro.classList.remove('jobImgPos3');
     relAmi.classList.remove('friendshipImgPos3');
+
+    bgBody.classList.add;
   }
 
   if (relPro.classList.contains('isActive')) {

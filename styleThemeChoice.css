@@ -79,43 +79,42 @@ body {
   position: absolute;
   top: 60%;
   height: 120%;
-  width: 50%;
+  width: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
 }
 
-.jobImgPos1,
-.jobImgPosdebase {
+.loveImgPos2 {
   display: block;
   position: absolute;
-  top: 40%;
-  height: 30%;
-  width: 30%;
+  top: 30%;
+  height: 40%;
+  width: 25%;
+  left: 0;
+  z-index: 1;
+}
+
+.loveImgPos3 {
+  display: block;
+  position: absolute;
+  top: 30%;
+  height: 40%;
+  width: 25%;
   right: 0;
   z-index: 1;
 }
 
-.friendshipImgPos1,
-.friendImgPosdebase {
+/**/
+
+.jobImgPos1,
+.jobImgPosdebase {
   display: block;
   position: absolute;
-  top: 40%;
-  height: 30%;
-  width: 30%;
-  left: 0;
-  z-index: 1;
-}
-
-/* Position 2 */
-
-.loveImgPos2 {
-  display: block;
-  position: absolute;
-  top: 40%;
-  height: 40%;
-  width: 20%;
-  left: 0;
+  top: 30%;
+  height: 50%;
+  width: 50%;
+  right: 0;
   z-index: 1;
 }
 
@@ -123,42 +122,44 @@ body {
   display: block;
   position: absolute;
   top: 70%;
-  height: 60%;
-  width: 60%;
+  height: 80%;
+  width: 90%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
+}
+
+.jobImgPos3 {
+  display: block;
+  position: absolute;
+  top: 30%;
+  height: 50%;
+  width: 50%;
+  left: 0;
+  z-index: 1;
+}
+
+/**/
+
+.friendshipImgPos1,
+.friendImgPosdebase {
+  display: block;
+  position: absolute;
+  top: 30%;
+  height: 45%;
+  width: 35%;
+  left: 0;
+  z-index: 1;
 }
 
 .friendshipImgPos2 {
   display: block;
   position: absolute;
   top: 40%;
-  height: 30%;
-  width: 30%;
+  top: 30%;
+  height: 45%;
+  width: 35%;
   right: 0;
-  z-index: 1;
-}
-
-/* Position 3 */
-
-.loveImgPos3 {
-  display: block;
-  position: absolute;
-  top: 40%;
-  height: 40%;
-  width: 20%;
-  right: 0;
-  z-index: 1;
-}
-
-.jobImgPos3 {
-  display: block;
-  position: absolute;
-  top: 40%;
-  height: 30%;
-  width: 30%;
-  left: 0;
   z-index: 1;
 }
 
@@ -166,12 +167,13 @@ body {
   display: block;
   position: absolute;
   top: 60%;
-  height: 60%;
-  width: 60%;
+  height: 90%;
+  width: 80%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
 }
+
 .isActive {
 }
 
