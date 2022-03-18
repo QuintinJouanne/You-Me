@@ -15,6 +15,7 @@ form {
 form h1 {
   color: #eb7371;
   text-align: center;
+  margin-bottom: 30px;
 }
 form .inputs {
   display: flex;
@@ -46,6 +47,10 @@ form button {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+button a {
+  text-decoration: none;
+  color: white;
+}
 /*----------MediaQueries----------*/
 @media screen and (min-width: 768px) {
   body {
@@ -53,6 +58,6 @@ form button {
     background-size: cover;
   }
   form {
-    margin-top: 200px;
+    margin: 350px 500px 0px 500px;
   }
 }
