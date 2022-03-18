@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500;700;800;900&display=swap');
+
+:root {
+  --main-bg-color-work: #c6ddff;
+  --main-bg-color-love: #f6dddd;
+  --main-bg-color-friend: #fde5b6;
+  --main-button-color-work: #96c0ff;
+  --main-button-color-love: #f3a0a0;
+  --main-button-color-friend: #dfb462;
+  --button-color-selected-work: #3e76c9;
+  --button-color-selected-love: #e94f4f;
+  --button-color-selected-friend: #664300;
+}
+/* CSS RULES FOR WORK-QUESTIONS*/
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  background-color: var(--main-bg-color-work);
+}
+
+.progress-bar {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+#progressbar {
+  width: 80%;
+  height: 40px;
+}
+
+.question-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  font-size: 15pt;
+  text-align: center;
+}
+
+.containerAB {
+  display: flex;
+  height: 250px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.boutonAB {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.buttonA {
+  background-color: var(--main-button-color-work);
+  width: 200px;
+  height: 100px;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 13px 14px 24px 0px rgba(0, 0, 0, 0.35);
+  transition: 0.8s;
+}
+
+.buttonA:hover {
+  width: 220px;
+  height: 120px;
+}
+
+.buttonB {
+  background-color: var(--main-button-color-work);
+  width: 200px;
+  height: 100px;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 13px 14px 24px 0px rgba(0, 0, 0, 0.35);
+  transition: 0.8s;
+}
+
+.buttonB:hover {
+  width: 220px;
+  height: 120px;
+}
+
+.bouton-next {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: 90px;
+}
+
+.next {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.next:active {
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+/*CSS RULES FOR LOVE-QUESTION*/
+.body2 {
+  font-family: 'Kumbh Sans', sans-serif;
+  background-color: var(--main-bg-color-love);
+}
+
+.progress-bar2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+#progressbar2 {
+  width: 80%;
+  height: 40px;
+}
+
+.question-container2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  font-size: 15pt;
+  text-align: center;
+}
+
+.containerAB2 {
+  display: flex;
+  height: 250px;
+  justify-content: center;
+  margin-top: 60px;
+}
+
+.boutonAB2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.buttonA2 {
+  background-color: var(--main-button-color-love);
+  width: 200px;
+  height: 100px;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 13px 14px 24px 0px rgba(0, 0, 0, 0.35);
+  transition: 0.8s;
+}
+
+.buttonA2:hover {
+  width: 220px;
+  height: 120px;
+}
+
+.buttonB2 {
+  background-color: var(--main-button-color-love);
+  width: 200px;
+  height: 100px;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 13px 14px 24px 0px rgba(0, 0, 0, 0.35);
+  transition: 0.8s;
+}
+
+.buttonB2:hover {
+  width: 220px;
+  height: 120px;
+}
+
+.bu .bouton-next2 {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: 20px;
+}
+
+.next2 {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.8s;
+}
+
+.next2:hover {
+  width: 60px;
+  height: 60px;
+}
+
+/*CSS RULES FOR FRIEND-QUESTION*/
+
+.body3 {
+  font-family: 'Kumbh Sans', sans-serif;
+  background-color: var(--main-bg-color-friend);
+}
+
+.progress-bar3 {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+#progressbar3 {
+  width: 80%;
+  height: 40px;
+}
+
+.question-container3 {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  font-size: 15pt;
+  text-align: center;
+}
+
+.containerAB3 {
+  display: flex;
+  height: 250px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.boutonAB3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.buttonA3 {
+  background-color: var(--main-button-color-friend);
+  width: 200px;
+  height: 100px;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 13px 14px 24px 0px rgba(0, 0, 0, 0.35);
+  transition: 0.8s;
+}
+
+.buttonA3:hover {
+  width: 220px;
+  height: 120px;
+}
+
+.buttonB3 {
+  background-color: var(--main-button-color-friend);
+  width: 200px;
+  height: 100px;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 13px 14px 24px 0px rgba(0, 0, 0, 0.35);
+  transition: 0.8s;
+}
+
+.buttonB3:hover {
+  width: 220px;
+  height: 120px;
+}
+
+.bouton-next3 {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: 90px;
+}
+
+.next3 {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.8s;
+}
+
+.next3:hover {
+  width: 60px;
+  height: 60px;
+}
