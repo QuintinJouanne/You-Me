@@ -21,7 +21,7 @@ body {
 .progress-bar {
   display: flex;
   justify-content: center;
-  margin-top: 100px;
+  margin-top: 150px;
 }
 
 #progressbar {
@@ -30,6 +30,8 @@ body {
 }
 
 .question-container {
+  width: 370px;
+  height: 200px;
   display: flex;
   justify-content: center;
   margin-top: 10px;
@@ -37,14 +39,23 @@ body {
   text-align: center;
 }
 
+p {
+  width: 250px;
+  height: 100px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20pt;
+}
+
 .containerAB {
   display: flex;
   height: 250px;
   justify-content: center;
-  margin-top: 40px;
 }
 
 .boutonAB {
+  width: 350px;
+  height: 350px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -53,8 +64,8 @@ body {
 
 .buttonA {
   background-color: var(--main-button-color-work);
-  width: 200px;
-  height: 100px;
+  width: 300px;
+  height: 150px;
   border-radius: 20px;
   cursor: pointer;
   box-shadow: 13px 14px 24px 0px rgba(0, 0, 0, 0.35);
@@ -62,14 +73,18 @@ body {
 }
 
 .buttonA:hover {
-  width: 220px;
-  height: 120px;
+  width: 320px;
+  height: 170px;
+}
+
+.buttonA:focus {
+  background-color: var(--button-color-selected-work);
 }
 
 .buttonB {
   background-color: var(--main-button-color-work);
-  width: 200px;
-  height: 100px;
+  width: 300px;
+  height: 150px;
   border-radius: 20px;
   cursor: pointer;
   box-shadow: 13px 14px 24px 0px rgba(0, 0, 0, 0.35);
@@ -77,8 +92,12 @@ body {
 }
 
 .buttonB:hover {
-  width: 220px;
-  height: 120px;
+  width: 320px;
+  height: 170px;
+}
+
+.buttonB:focus {
+  background-color: var(--button-color-selected-work);
 }
 
 .bouton-next {
@@ -87,7 +106,7 @@ body {
   height: 100px;
   justify-content: flex-end;
   align-items: flex-end;
-  margin-top: 90px;
+  margin-top: 60px;
 }
 
 .next {
@@ -120,6 +139,8 @@ body {
 }
 
 .question-container2 {
+  width: 370px;
+  height: 200px;
   display: flex;
   justify-content: center;
   margin-top: 10px;
@@ -127,23 +148,33 @@ body {
   text-align: center;
 }
 
+p {
+  width: 250px;
+  height: 100px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20pt;
+}
+
 .containerAB2 {
   display: flex;
   height: 250px;
   justify-content: center;
-  margin-top: 60px;
 }
 
 .boutonAB2 {
+  width: 350px;
+  height: 350px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
 }
 
 .buttonA2 {
   background-color: var(--main-button-color-love);
-  width: 200px;
-  height: 100px;
+  width: 300px;
+  height: 150px;
   border-radius: 20px;
   cursor: pointer;
   box-shadow: 13px 14px 24px 0px rgba(0, 0, 0, 0.35);
@@ -151,14 +182,14 @@ body {
 }
 
 .buttonA2:hover {
-  width: 220px;
-  height: 120px;
+  width: 320px;
+  height: 170px;
 }
 
 .buttonB2 {
   background-color: var(--main-button-color-love);
-  width: 200px;
-  height: 100px;
+  width: 300px;
+  height: 170px;
   border-radius: 20px;
   cursor: pointer;
   box-shadow: 13px 14px 24px 0px rgba(0, 0, 0, 0.35);
@@ -166,8 +197,8 @@ body {
 }
 
 .buttonB2:hover {
-  width: 220px;
-  height: 120px;
+  width: 320px;
+  height: 170px;
 }
 
 .bu .bouton-next2 {
@@ -212,6 +243,8 @@ body {
 }
 
 .question-container3 {
+  width: 370px;
+  height: 200px;
   display: flex;
   justify-content: center;
   margin-top: 10px;
@@ -219,23 +252,33 @@ body {
   text-align: center;
 }
 
+p {
+  width: 250px;
+  height: 100px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20pt;
+}
+
 .containerAB3 {
   display: flex;
   height: 250px;
   justify-content: center;
-  margin-top: 40px;
 }
 
 .boutonAB3 {
+  width: 350px;
+  height: 350px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
 }
 
 .buttonA3 {
   background-color: var(--main-button-color-friend);
-  width: 200px;
-  height: 100px;
+  width: 300px;
+  height: 150px;
   border-radius: 20px;
   cursor: pointer;
   box-shadow: 13px 14px 24px 0px rgba(0, 0, 0, 0.35);
@@ -243,14 +286,14 @@ body {
 }
 
 .buttonA3:hover {
-  width: 220px;
-  height: 120px;
+  width: 320px;
+  height: 170px;
 }
 
 .buttonB3 {
   background-color: var(--main-button-color-friend);
-  width: 200px;
-  height: 100px;
+  width: 300px;
+  height: 150px;
   border-radius: 20px;
   cursor: pointer;
   box-shadow: 13px 14px 24px 0px rgba(0, 0, 0, 0.35);
@@ -258,8 +301,8 @@ body {
 }
 
 .buttonB3:hover {
-  width: 220px;
-  height: 120px;
+  width: 320px;
+  height: 170px;
 }
 
 .bouton-next3 {

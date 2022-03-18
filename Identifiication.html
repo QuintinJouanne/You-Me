@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Formulaire de connexion en HTML & CSS - Frenchcoder</title>
+    <title>You&Me Compatibility</title>
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="ID.css" />
     <link
       rel="stylesheet"
@@ -11,25 +12,47 @@
     />
   </head>
   <body>
-    <form>
-      <h1>S'identifier avec</h1>
-      <div class="social-media">
-        <p><i class="fab fa-google"></i></p>
-        <p><i class="fab fa-youtube"></i></p>
-        <p><i class="fab fa-facebook-f"></i></p>
-        <p><i class="fab fa-twitter"></i></p>
+    <nav class="color-home navbar" role="navigation">
+      <div class="navbar__logo">
+        <h1>You&Me</h1>
+        <img class="cple" src="image/cple.png" alt="image-couple" />
       </div>
-      <p class="choose-email">ou utiliser mon adresse e-mail :</p>
+      <ul class="background-color-home navbar__links">
+        <li class="color-home navbar__link first">
+          <a href="homepage.html">Accueil</a>
+        </li>
+        <li class="color-home navbar__link second">
+          <a href="question-love.html">Try Love</a>
+        </li>
+        <li class="color-home navbar__link third">
+          <a href="question-work.html">Try Work</a>
+        </li>
+        <li class="color-home navbar__link third">
+          <a href="question-friend.html">Try friends</a>
+        </li>
+        <li class="color-home navbar__link four">
+          <a href="aboutUs.html">About us</a>
+        </li>
+        <li class="color-home navbar__link fifth">
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+      <button class="burger">
+        <span class="color-burger-home bar"></span>
+      </button>
+    </nav>
+    <form>
+      <h1>S'identifier</h1>
       <div class="inputs">
         <input type="email" placeholder="Nom" />
         <input type="password" placeholder="Prenom" />
       </div>
-      <p class="inscription">
-        Je n'ai pas de <span>compte</span>. Je m'en <span>crée</span> un.
-      </p>
       <div align="center">
-        <button id="button" type="submit">Se connecter</button>
+        <button id="button" type="submit">
+          <a href="themeChoice.html">C'est parti !!</a>
+        </button>
       </div>
     </form>
+    <script src="homepage.js"></script>
   </body>
 </html>
