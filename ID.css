@@ -56,12 +56,7 @@ form p.inscription {
   margin-bottom: 20px;
   color: #878787;
 }
-form p.inscription span {
-  color: #eb7371;
-}
-form button {
-  padding: 15px 25px;
-  border-radius: 5px;
+.Identification {
   border: none;
   font-size: 15px;
   color: #fff;
