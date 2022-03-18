@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Kumbh Sans', sans-serif;
+  background-image: url(img/Bg.png);
+  background-size: cover;
+}
+
+/* mainContainer */
+
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0px 15px 0px 15px;
+}
+
+.mainContainer p {
+  text-align: center;
+  font-weight: 600;
+}
+
+.txtContainer,
+.sliderContainer,
+.imgContainer {
+  margin: 30px 0px 30px 0px;
+}
+
+/* slider container */
+.sliderContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-direction: row;
+  /* background-color: chocolate;*/
+}
+
+.arrowLeft,
+.arrowRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background: #27233a;
+  border-radius: 50%;
+}
+
+.arrowImg {
+  width: 50%;
+  height: 50%;
+}
+
+.imgContainer {
+  display: block;
+  position: relative;
+  height: 250px;
+  width: 100%;
+  /* background-color: brown; */
+  top: -50px;
+}
+
+/* Position 1 */
+
+.loveImgPos1,
+.loveImgdebase {
+  display: block;
+  position: absolute;
+  top: 60%;
+  height: 120%;
+  width: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.jobImgPos1,
+.jobImgPosdebase {
+  display: block;
+  position: absolute;
+  top: 40%;
+  height: 30%;
+  width: 30%;
+  right: 0;
+  z-index: 1;
+}
+
+.friendshipImgPos1,
+.friendImgPosdebase {
+  display: block;
+  position: absolute;
+  top: 40%;
+  height: 30%;
+  width: 30%;
+  left: 0;
+  z-index: 1;
+}
+
+/* Position 2 */
+
+.loveImgPos2 {
+  display: block;
+  position: absolute;
+  top: 40%;
+  height: 40%;
+  width: 20%;
+  left: 0;
+  z-index: 1;
+}
+
+.jobImgPos2 {
+  display: block;
+  position: absolute;
+  top: 70%;
+  height: 60%;
+  width: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.friendshipImgPos2 {
+  display: block;
+  position: absolute;
+  top: 40%;
+  height: 30%;
+  width: 30%;
+  right: 0;
+  z-index: 1;
+}
+
+/* Position 3 */
+
+.loveImgPos3 {
+  display: block;
+  position: absolute;
+  top: 40%;
+  height: 40%;
+  width: 20%;
+  right: 0;
+  z-index: 1;
+}
+
+.jobImgPos3 {
+  display: block;
+  position: absolute;
+  top: 40%;
+  height: 30%;
+  width: 30%;
+  left: 0;
+  z-index: 1;
+}
+
+.friendshipImgPos3 {
+  display: block;
+  position: absolute;
+  top: 60%;
+  height: 60%;
+  width: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+/*
+
+
+
+.loveImgPos1 {
+  display: block;
+  position: absolute;
+  height: 60%;
+  width: 20%;
+  left: 0;
+  z-index: 2;
+}
+
+.jobImgPos1 {
+  display: block;
+  position: absolute;
+  height: 70%;
+  width: 60%;
+  top: 70%;
+  left: 50%; 
+  transform: translate(-50%, -50%); 
+  z-index: 3;
+}
+
+.friendshipImgPos1 {
+  display: block;
+  position: absolute;
+  height: 50%;
+  width: 45%;
+  right: 0;
+  z-index: 2;
+}
+
+
+.loveImgPos2 {
+  display: block;
+  position: absolute;
+  height: 60%;
+  width: 20%;
+  right: 0;
+  z-index: 2;
+}
+
+.jobImgPos2 {
+  display: block;
+  position: absolute;
+  height: 40%;
+  width: 30%;
+  left: 0;
+  z-index: 2;
+}
+
+.friendshipImgPos2 {
+  display: block;
+  position: absolute;
+  height: 80%;
+  width: 75%;
+  right: 0;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+.loveImgPos3 {
+  display: block;
+  position: absolute;
+  height: 90%;
+  width: 45%;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+.jobImgPos3 {
+  display: block;
+  position: absolute;
+  height: 40%;
+  width: 30%;
+  right: 0;
+  z-index: 2;
+}
+
+.friendshipImgPos3 {
+  display: block;
+  position: absolute;
+  height: 40%;
+  width: 35%;
+  left: 0;
+  z-index: 2;
+}
+*/
+.isActive {
+}
