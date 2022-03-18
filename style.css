@@ -146,9 +146,6 @@ body {
 .show-nav .four {
   transition: all 1.3s ease-out;
 }
-.show-nav .fifth {
-  transition: all 1.4s ease-out;
-}
 
 /* Colors home */
 .color-home {
