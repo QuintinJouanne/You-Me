@@ -1,13 +1,10 @@
 body {
-  display: flex;
-  justify-content: center;
-  flex-direction: columns;
-  align-items: center;
   background-image: url('img/Bg.png');
   background-size: cover;
   font-family: 'Roboto', sans-serif;
 }
 
+/*----------Form style----------*/
 form {
   background-color: #fff;
   padding: 40px 60px;
@@ -17,25 +14,6 @@ form {
 }
 form h1 {
   color: #eb7371;
-  text-align: center;
-}
-form .social-media {
-  margin-top: -10px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-form .social-media p {
-  padding: 5px;
-  width: 20px;
-  margin-left: 10px;
-  border-radius: 100%;
-  border: 1px solid #545454;
-  text-align: center;
-  cursor: pointer;
-  color: #545454;
-}
-form p.choose-email {
   text-align: center;
 }
 form .inputs {
@@ -51,12 +29,14 @@ input[type='password'] {
   outline: none;
   margin-bottom: 15px;
 }
-form p.inscription {
-  font-size: 14px;
-  margin-bottom: 20px;
-  color: #878787;
+
+form button:active {
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-.Identification {
+
+form button {
+  padding: 15px 25px;
+  border-radius: 5px;
   border: none;
   font-size: 15px;
   color: #fff;
@@ -65,16 +45,14 @@ form p.inscription {
   cursor: pointer;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-form button:active {
-  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
 
+/*----------MediaQueries----------*/
 @media screen and (min-width: 768px) {
   body {
     background-image: url('img/Bg_desktop.png');
     background-size: cover;
   }
   form {
-    margin-top: 400px;
+    margin-top: 200px;
   }
 }
