@@ -4,13 +4,34 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="homepage.css" />
     <link rel="stylesheet" href="question.css" />
     <title>You & Me</title>
   </head>
   <body class="body3">
-    <header>
-      <nav></nav>
-    </header>
+    <nav class="color-home navbar" role="navigation">
+      <div class="navbar__logo">
+        <h1>You&Me</h1>
+        <img class="cple" src="image/cple.png" alt="image-couple" />
+      </div>
+      <ul class="background-color-home navbar__links">
+        <li class="color-home navbar__link first"><a href="#">Accueil</a></li>
+        <li class="color-home navbar__link second">
+          <a href="#">Try Love</a>
+        </li>
+        <li class="color-home navbar__link third">
+          <a href="#">Try Work</a>
+        </li>
+        <li class="color-home navbar__link third">
+          <a href="#">Try friends</a>
+        </li>
+        <li class="color-home navbar__link four"><a href="#">About us</a></li>
+        <li class="color-home navbar__link fifth"><a href="#">Contact</a></li>
+      </ul>
+      <button class="burger">
+        <span class="color-burger-home bar"></span>
+      </button>
+    </nav>
 
     <section>
       <div class="progress-bar3">
@@ -20,20 +41,14 @@
 
     <section>
       <div class="question-container3">
-        <p>
-          L’affirmation qui me correspond le mieux…
-          <br />
-          <br />
-          A : Je sais écouter. <br />
-          B : Je sais me faire entendre.
-        </p>
+        <p>L’affirmation qui me correspond le mieux…</p>
       </div>
     </section>
 
     <div class="containerAB3">
       <div class="boutonAB3">
-        <button class="buttonA3">A</button>
-        <button class="buttonB3">B</button>
+        <button class="buttonA3">Je sais écouter.</button>
+        <button class="buttonB3">Je sais me faire entendre.</button>
       </div>
     </div>
 
@@ -42,6 +57,7 @@
         <img src="chevron-right.png" alt="chevron next" />
       </button>
     </div>
+    <script src="menuBurger.js"></script>
 
     <script src="main.js"></script>
   </body>
