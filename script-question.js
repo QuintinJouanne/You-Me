@@ -17,16 +17,6 @@ const progress = function() {
 }
 
 
-
-
-
-
-
-
-
-
-
-
 //OBJET QUESTIONS//
 
 const questionsWork = [
@@ -76,9 +66,6 @@ const questionW8 = {
 }
 
 */
-
-
-
 
 
 const quesionLove = [
@@ -137,7 +124,7 @@ const quesionLove = [
   
 
 
-const questionFriend = {
+const questionFriend = [
     const questionF1 = {
         1:" L’affirmation qui me correspond le mieux…",
         A: "Je sais écouter.",
@@ -149,16 +136,43 @@ const questionFriend = {
         B: "Laurel et Hardy… ou Astérix et Obélix.",
     }
     const questionF3 = {
-    3: "A quoi reconnaît-on son/sa meilleur/e ami/e ?",
-    A: "On peut compter sur lui/elle pour recueillir nos confidences et garder nos secrets./  B- On peut compter sur lui/elle pour ne rien vous épargner : il/elle sera toujours sincère avec moi.",
-
+        3: "A quoi reconnaît-on son/sa meilleur/e ami/e ?",
+        A: "On peut compter sur lui/elle pour recueillir nos confidences et garder nos secrets.",
+        B: "On peut compter sur lui/elle pour ne rien vous épargner : il/elle sera toujours sincère avec moi.",
     }
-    4: "Si on était un tandem de super-héros, on serait…/A- Batman et Robin./B- Groot et Rocket Racoon",
-    5: "Quel est votre animal préféré ?/A- Chien/B- Chat",
-    6: "Un défaut que je ne supporte pas…/A- L’égoïsme./B- L’intolérance.",
-    7: "Vous etes accoudé au bar.../ A- Je sais quoi lui commander/B- On va attendre qu'il/elle revienne des sanitaires",
-    8: "Lorsque tu arrive chez elle/lui.../A- Tu te sers dans le frigo/B- Tu demandes poliement",
-    9: "Vous refaite le monde un soir.../A- vous utilisez des expressions inconnues du reste du monde/B- Pas un bruit, l'autre sait ce que vous pensé",
-    10: "Au fond, une véritable amie, c’est quoi ?/A- Un être que l’on aime malgré ses défauts ou nos désaccords./B- Un miroir de mes défauts comme de mes qualités.",
-    
-}
+    const questionF4 = {
+        4: "Si on était un tandem de super-héros, on serait…",
+        A: "Batman et Robin.",
+        B: "Groot et Rocket Racoon",
+    }
+    const questionF5 ={
+        5: "Quel est votre animal préféré ?",
+        A: "Chien",
+        B: "Chat",
+    }
+    const questionF6 = {
+        6: "Un défaut que je ne supporte pas…",
+        A: "L’égoïsme.",
+        B: "L’intolérance.",
+    }
+    const questionF7 = {
+        7: "Vous etes accoudé au bar...",
+        A: "Je sais quoi lui commander",
+        B: "On va attendre qu'il/elle revienne des sanitaires",
+    }
+    const questionF8 = {
+    8: "Lorsque tu arrive chez elle/lui...",
+    A: "Tu te sers dans le frigo",
+    B: "Tu demandes poliement",
+    }
+    const questionF9 ={
+    9: "Vous refaite le monde un soir...",
+    A: "Vous utilisez des expressions inconnues du reste du monde",
+    B: "Pas un bruit, l'autre sait ce que vous pensé",
+    }
+    const questionF10 = {
+    10: "Au fond, une véritable amie, c’est quoi ?",
+    A: "Un être que l’on aime malgré ses défauts ou nos désaccords.",
+    B: "Un miroir de mes défauts comme de mes qualités.",
+    }
+];
