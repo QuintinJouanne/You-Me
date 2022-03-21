@@ -26,9 +26,9 @@ const questionsWork = [
         B: "Réaliser tous ses rêves",
     }
     const questionW2 = {
-        2: "Préfèrez-vous travailler seul ou en equipe ?",
-        A: "oui",
-        B: "non",
+        2: "Préfèrez-vous travailler seul(e) ou en equipe ?",
+        A: "Seul(e)",
+        B: "En équipe",
     }
     const questionW3 = {
         3: "Vous aimez plutot travailler :",
@@ -37,6 +37,35 @@ const questionsWork = [
 
     }
 ];
+
+/*
+const questionW4 = {
+    4: "De quel emploi-avez toujours rêvé :",
+    A: "Medecin",
+    B: "Pilote de F1"
+}
+const questionW5 = {
+    5: "Pensez-vous avoir reussi ?",
+    A: "Oui",
+    B: "Non",
+}
+const questionW6 = {
+    6: "Que recherchez-vous dans votre lieu de travail ?",
+    A: "L'autonomie",
+    B: "Les challenges"
+} 
+const questionW7 = {
+    7: "Parmi les deux propositions, vous êtes plutôt ?",
+    A: "Extraverti",
+    B: "Introverti"
+}
+const questionW8 = {
+    8: "",
+    A: "",
+    B: "",
+}
+
+*/
 
 
 const quesionLove = [
