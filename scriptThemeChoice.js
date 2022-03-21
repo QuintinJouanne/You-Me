@@ -13,6 +13,8 @@ const precedant = document.querySelector('.arrowLeft');
 
 const bgBody = document.querySelector('body');
 
+const titleCategories = document.querySelector('.choiceCategories');
+
 function slidesuivante() {
   const activeElement = document.querySelector('.isActive');
 
@@ -43,6 +45,8 @@ function slidesuivante() {
     relPro.classList.remove('jobImgPos3');
     relAmi.classList.remove('friendshipImgPos3');
 
+    titleCategories.innerHTML = 'Relations Amoureuses';
+
     bgBody.classList.add;
   }
 
@@ -58,6 +62,8 @@ function slidesuivante() {
     relAmo.classList.remove('loveImgPos3');
     relPro.classList.remove('jobImgPos3');
     relAmi.classList.remove('friendshipImgPos3');
+
+    titleCategories.innerHTML = 'Relations Professionnelles';
   }
 
   if (relAmi.classList.contains('isActive')) {
@@ -72,6 +78,8 @@ function slidesuivante() {
     relAmo.classList.remove('loveImgPos2');
     relPro.classList.remove('jobImgPos2');
     relAmi.classList.remove('friendshipImgPos2');
+
+    titleCategories.innerHTML = 'Relations Amicales';
   }
 }
 
