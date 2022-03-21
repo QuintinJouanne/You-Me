@@ -5,17 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Results page love 1</title>
+    <link rel="stylesheet" href="homepage.css" />
     <link rel="stylesheet" href="resultsWork.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
+    <nav class="color-home navbar" role="navigation">
+      <div class="navbar__logo">
+        <h1>You&Me</h1>
+        <img class="cple" src="image/cple.png" alt="image-couple" />
+      </div>
+      <ul class="background-color-home navbar__links">
+        <li class="color-home navbar__link first">
+          <a href="homepage.html">Home</a>
+        </li>
+        <li class="color-home navbar__link second">
+          <a href="Identifiication.html">Try new mode</a>
+        </li>
+        <li class="color-home navbar__link third">
+          <a href="aboutUs.html">About us</a>
+        </li>
+        <li class="color-home navbar__link four">
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+      <button class="burger">
+        <span class="color-burger-home bar"></span>
+      </button>
+    </nav>
     <div class="container">
       <div class="circular-progress">
         <div class="value-container">0%</div>
       </div>
     </div>
-    <!--Script-->
-    <script src="work.js"></script>
 
     <div class="container2">
       <h2>Pourquoi pas ...</h2>
@@ -43,5 +66,7 @@
         <img class="lovebtn" src="images/image (1).png" />
       </imput>
     </div>
+    <script src="menuBurger.js"></script>
+    <script src="work.js"></script>
   </body>
 </html>

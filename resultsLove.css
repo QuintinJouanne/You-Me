@@ -19,6 +19,7 @@ body {
   border-radius: 50%;
   display: grid;
   place-items: center;
+  z-index: -2;
 }
 
 .container2 {
