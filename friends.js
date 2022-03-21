@@ -1,12 +1,12 @@
-let progressBar = document.querySelector('.circular-progress');
-let valueContainer = document.querySelector('.value-container');
+const progressBar = document.querySelector('.circular-progress');
+const valueContainer = document.querySelector('.value-container');
 
 let progressValue = 0;
-let progressEndValue = 55;
-let speed = 100;
+const progressEndValue = 55;
+const speed = 100;
 
-let progress = setInterval(() => {
-  progressValue++;
+const progress = setInterval(() => {
+  progressValue += 1;
   valueContainer.textContent = `${progressValue}%`;
   progressBar.style.background = `conic-gradient(
     #DFB462 ${progressValue * 3.6}deg,
