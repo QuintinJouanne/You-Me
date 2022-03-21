@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Kumbh Sans', sans-serif;
+  background-image: url(img/Bg_mobile.png);
+  background-size: cover;
+}
+
+/* mainContainer */
+
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0px 15px 0px 15px;
+}
+
+.mainContainer p {
+  text-align: center;
+  font-weight: 600;
+}
+
+.txtContainer,
+.sliderContainer,
+.imgContainer {
+  margin: 30px 0px 30px 0px;
+}
+
+/* slider container */
+.sliderContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-direction: row;
+  /* background-color: chocolate;*/
+}
+
+.arrowLeft,
+.arrowRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background: #27233a;
+  border-radius: 50%;
+}
+
+.arrowImg {
+  width: 50%;
+  height: 50%;
+}
+
+.imgContainer {
+  display: block;
+  position: relative;
+  height: 250px;
+  width: 100%;
+  /* background-color: brown; */
+  top: -50px;
+}
+
+/* Position 1 */
+
+.loveImgPos1,
+.loveImgdebase {
+  display: block;
+  position: absolute;
+  top: 60%;
+  height: 120%;
+  width: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  transition: 1s;
+}
+
+.loveImgPos2 {
+  display: block;
+  position: absolute;
+  top: 30%;
+  height: 40%;
+  width: 25%;
+  left: 0;
+  z-index: 1;
+  transition: 2s;
+}
+
+.loveImgPos3 {
+  display: block;
+  position: absolute;
+  top: 30%;
+  height: 40%;
+  width: 25%;
+  right: 0;
+  z-index: 1;
+  transition: 3s;
+}
+
+/**/
+
+.jobImgPos1,
+.jobImgPosdebase {
+  display: block;
+  position: absolute;
+  top: 30%;
+  height: 50%;
+  width: 50%;
+  right: 0;
+  z-index: 1;
+  transition: 1s;
+}
+
+.jobImgPos2 {
+  display: block;
+  position: absolute;
+  top: 70%;
+  height: 80%;
+  width: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  transition: 2s;
+}
+
+.jobImgPos3 {
+  display: block;
+  position: absolute;
+  top: 30%;
+  height: 50%;
+  width: 50%;
+  left: 0;
+  z-index: 1;
+  transition: 3s;
+}
+
+/**/
+
+.friendshipImgPos1,
+.friendImgPosdebase {
+  display: block;
+  position: absolute;
+  top: 30%;
+  height: 45%;
+  width: 35%;
+  left: 0;
+  z-index: 1;
+  transition: 1s;
+}
+
+.friendshipImgPos2 {
+  display: block;
+  position: absolute;
+  top: 40%;
+  top: 30%;
+  height: 45%;
+  width: 35%;
+  right: 0;
+  z-index: 1;
+  transition: 2s;
+}
+
+.friendshipImgPos3 {
+  display: block;
+  position: absolute;
+  top: 60%;
+  height: 90%;
+  width: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  transition: 3s;
+}
+
+.isActive {
+}
+
+/* Médiaqueries */
+@media screen and (min-width: 540px) {
+  body {
+    background-image: url(img/Bg_desktop.png);
+    background-size: cover;
+  }
+}
