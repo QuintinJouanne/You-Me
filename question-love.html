@@ -4,13 +4,35 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="homepage.css" />
     <link rel="stylesheet" href="question.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>You & Me</title>
   </head>
   <body class="body2">
-    <header>
-      <nav></nav>
-    </header>
+    <nav class="color-home navbar" role="navigation">
+      <div class="navbar__logo">
+        <h1>You&Me</h1>
+        <img class="cple" src="image/cple.png" alt="image-couple" />
+      </div>
+      <ul class="background-color-home navbar__links">
+        <li class="color-home navbar__link first"><a href="#">Accueil</a></li>
+        <li class="color-home navbar__link second">
+          <a href="#">Try Love</a>
+        </li>
+        <li class="color-home navbar__link third">
+          <a href="#">Try Work</a>
+        </li>
+        <li class="color-home navbar__link third">
+          <a href="#">Try friends</a>
+        </li>
+        <li class="color-home navbar__link four"><a href="#">About us</a></li>
+        <li class="color-home navbar__link fifth"><a href="#">Contact</a></li>
+      </ul>
+      <button class="burger">
+        <span class="color-burger-home bar"></span>
+      </button>
+    </nav>
 
     <section>
       <div class="progress-bar2">
@@ -23,20 +45,18 @@
         <p>
           Vous avez rencontré votre âme sœur il y a 6 mois de cela, comment vous
           imaginez-vous dans 1 an :
-          <br />
-          <br />
-          A : En train de peaufiner les préparatifs de notre mariage
-          imminent.<br />
-          B : Chacun chez soi, rien de tel pour préserver la paix et
-          l’étincelle.
         </p>
       </div>
     </section>
 
     <div class="containerAB2">
       <div class="boutonAB2">
-        <button class="buttonA2">A</button>
-        <button class="buttonB2">B</button>
+        <button class="buttonA2">
+          En train de peaufiner les préparatifs de notre mariage imminent.
+        </button>
+        <button class="buttonB2">
+          Chacun chez soi, rien de tel pour préserver la paix et l’étincelle.
+        </button>
       </div>
     </div>
 
@@ -45,6 +65,7 @@
         <img src="chevron-right.png" alt="chevron next" />
       </button>
     </div>
+    <script src="menuBurger.js"></script>
 
     <script src="main.js"></script>
   </body>

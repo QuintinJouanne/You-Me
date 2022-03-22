@@ -17,119 +17,226 @@ const progress = function() {
 }
 
 
-
-
-
-
-
-
-
-
-
-
 //OBJET QUESTIONS//
 
+
+
 const questionsWork = [
-    const questionW1 = {
-        1: "Selon vous, choisir un métier, c'est :",
+    {
+    questionW1: "Selon vous, choisir un métier, c'est :",
+    answer: {
         A: "S'assurer des débouchés, un emploi",
         B: "Réaliser tous ses rêves",
-    }
-    const questionW2 = {
-        2: "Préfèrez-vous travailler seul ou en equipe ?",
+<<<<<<< HEAD
+    },
+},
+{
+  questionW2: "Préfèrez-vous travailler seul ou en equipe ?",
+  answer: {
         A: "oui",
         B: "non",
+    },
+},
+{
+  questionW3: "Vous aimez plutot travailler :",
+  answer: {
+=======
+    }
+    const questionW2 = {
+        2: "Préfèrez-vous travailler seul(e) ou en equipe ?",
+        A: "Seul(e)",
+        B: "En équipe",
     }
     const questionW3 = {
         3: "Vous aimez plutot travailler :",
+>>>>>>> Dev
         A: "En entreprise.",
         B: "En remote.",
-
-    }
+    },
 ];
 
+/*
+const questionW4 = {
+    4: "De quel emploi-avez toujours rêvé :",
+    A: "Medecin",
+    B: "Pilote de F1"
+}
+const questionW5 = {
+    5: "Pensez-vous avoir reussi ?",
+    A: "Oui",
+    B: "Non",
+}
+const questionW6 = {
+    6: "Que recherchez-vous dans votre lieu de travail ?",
+    A: "L'autonomie",
+    B: "Les challenges"
+} 
+const questionW7 = {
+    7: "Parmi les deux propositions, vous êtes plutôt ?",
+    A: "Extraverti",
+    B: "Introverti"
+}
+const questionW8 = {
+    8: "",
+    A: "",
+    B: "",
+}
+
+*/
 
 
+let answerJoueur1 = 0;
+
+for (let i = 0; i < questionsWork.length; i++) {
+    
+}
 
 
-const quesionLove = [
-    const questionL1 = {
-        1: "Vous avez rencontré votre âme sœur il y a 6 mois de cela, comment vous imaginez-vous dans 1 an :",
+const quesionLove = [ 
+    {
+    questionL1: "Vous avez rencontré votre âme sœur il y a 6 mois de cela, comment vous imaginez-vous dans 1 an :",
+    answer: {
         A: "En train de peaufiner les préparatifs de notre mariage imminent.",
         B: "Chacun chez soi, rien de tel pour préserver la paix et l’étincelle.",
-    }
-    const questionL2 = {
-        2: "Côté enfant, je souhaite :",
+    },
+},
+{
+    questionL2: "Côté enfant, je souhaite :",
+    answer: {
         A: "Une demie douzaine d’enfants : famille nombreuse, famille heureuse !",
         B: "Les enfants, c’est bien chez les autres !",
-    }
-    const questionL3 = {
-        3: "Les courses et le ménage c’est :",
+    },
+},
+{
+    questionL3: "Les courses et le ménage c’est :",
+    answer: {
         A: "Chacun son  tour, c’est normal",
         B: "Pas pour moi je suis allergique",
-    }
-    const questionL4 = {
-        4: "Une fois en couple vous envisagez les sorties :",
+    },
+},
+{
+    questionL4: "Une fois en couple vous envisagez les sorties :",
+    answer: {
         A: "Sans mon /ma bien aimé/e",
         B: "Tous les 2 ou pas",
-    }
-    const questionL5 = {
-        5: "Lors d’une soirée, une personne du sexe opposé semble porter un intérêt un peu trop marqué à votre moitié :",
+    },
+},
+{
+    questionL5: "Lors d’une soirée, une personne du sexe opposé semble porter un intérêt un peu trop marqué à votre moitié :",
+    answer: {
         A: "Vous êtes plutôt fier/ière et vous lui faites confiance pour gérer la situation comme il se doit.",
         B:  "Vous vous fâchez contre votre moitié, c’est insupportable cette situation !",
-    }
-    const questionL6 = {
-        6: "Côté spirituel, Il est important pour vous que votre conjoint :",
+    },
+},
+{
+    questionL6: "Côté spirituel, Il est important pour vous que votre conjoint :",
+    answer: {
         A: "Partage la même vision de la religion que vous et vous accompagne aux offices.",
         B: "Respecte votre vision de la religion, peu importe s’il/elle est pratiquant /e voire croyant/e",
-    }
-    const questionL7 = {
-        7: "Pour  prendre une décision importante vous concernant :",
+    },
+},
+{
+    questionL7: "Pour  prendre une décision importante vous concernant :",
+    answer: {
         A: "Je n’écoute que moi.",
         B: "Je compte sur ma moitié pour me diriger dans la bonne direction.",
-    }
-    const questionL8 = {
-        8: "Votre conjoint a passé une journée terrible et a besoin de se confier, de partager",
+    },
+},
+{
+    questionL8: "Votre conjoint a passé une journée terrible et a besoin de se confier, de partager",
+    answer: {
         A: "Je suis à l’écoute, je l’aide à exprimer ses sentiments et le soutiens",
         B: "Vous changez, tout de suite, de sujet, il ne sert à rien de se plaindre.",
-    }
-    const questionL9 = {
-        9: "Pour l’éducation des enfants…",
+    },
+},
+{
+    questionL9: "Pour l’éducation des enfants…",
+    answer: {
         A: "Ils seront élevés de la même façon dont je l’ai été, je ne vois pas d’autre alternative.",
         B: "C’est une page blanche à écrire à deux.",
-    }
-    const questionL10 = {
-        10: "Les loisirs que vous aimeriez partager avec votre âme soeur :",
+    },
+},
+{
+    questionL10: "Les loisirs que vous aimeriez partager avec votre âme soeur :",
+    answer: {
         A: "Des moments tranquilles devant une série, Boum Boum crac-crac",
         B: "Des voyages, de l’aventure",
-    }
+    },
+},
 ];
 
   
 
 
-const questionFriend = {
-    const questionF1 = {
-        1:" L’affirmation qui me correspond le mieux…",
+const questionFriend = [
+{
+    questionF1: " L’affirmation qui me correspond le mieux…",
+    answer: {
         A: "Je sais écouter.",
         B: "Je sais me faire entendre.",
-    }
-    const questionF2 = {
-        2: "Nous deux, on pourrait reprendre les rôles de…",
+    },
+},
+{
+    questionF2: "Nous deux, on pourrait reprendre les rôles de…",
+    answer: {
         A: "Starsky et Hutch… ou Dupond et Dupont !",
         B: "Laurel et Hardy… ou Astérix et Obélix.",
-    }
-    const questionF3 = {
-    3: "A quoi reconnaît-on son/sa meilleur/e ami/e ?",
-    A: "On peut compter sur lui/elle pour recueillir nos confidences et garder nos secrets./  B- On peut compter sur lui/elle pour ne rien vous épargner : il/elle sera toujours sincère avec moi.",
-
-    }
-    4: "Si on était un tandem de super-héros, on serait…/A- Batman et Robin./B- Groot et Rocket Racoon",
-    5: "Quel est votre animal préféré ?/A- Chien/B- Chat",
-    6: "Un défaut que je ne supporte pas…/A- L’égoïsme./B- L’intolérance.",
-    7: "Vous etes accoudé au bar.../ A- Je sais quoi lui commander/B- On va attendre qu'il/elle revienne des sanitaires",
-    8: "Lorsque tu arrive chez elle/lui.../A- Tu te sers dans le frigo/B- Tu demandes poliement",
-    9: "Vous refaite le monde un soir.../A- vous utilisez des expressions inconnues du reste du monde/B- Pas un bruit, l'autre sait ce que vous pensé",
-    10: "Au fond, une véritable amie, c’est quoi ?/A- Un être que l’on aime malgré ses défauts ou nos désaccords./B- Un miroir de mes défauts comme de mes qualités.",
-    
-}
+    },
+},
+{
+    questionF3: "A quoi reconnaît-on son/sa meilleur/e ami/e ?",
+    answer: {
+        A: "On peut compter sur lui/elle pour recueillir nos confidences et garder nos secrets.",
+        B: "On peut compter sur lui/elle pour ne rien vous épargner : il/elle sera toujours sincère avec moi.",
+    },
+},
+{
+    questionF4: "Si on était un tandem de super-héros, on serait…",
+    answer: {
+        A: "Batman et Robin.",
+        B: "Groot et Rocket Racoon",
+    },
+},
+{
+    questionF5: "Quel est votre animal préféré ?",
+    answer: {
+        A: "Chien",
+        B: "Chat",
+    },
+},
+{
+    questionF6: "Un défaut que je ne supporte pas…",
+    answer: {
+        A: "L’égoïsme.",
+        B: "L’intolérance.",
+    },
+},
+{
+    questionF7: "Vous etes accoudé au bar...",
+    answer: {
+        A: "Je sais quoi lui commander",
+        B: "On va attendre qu'il/elle revienne des sanitaires",
+    },
+},
+{
+    questionF8: "Lorsque tu arrive chez elle/lui...",
+    answer: {
+        A: "Tu te sers dans le frigo",
+        B: "Tu demandes poliement",
+    },
+},
+{
+    questionF9: "Vous refaite le monde un soir...",
+    answer: {
+        A: "Vous utilisez des expressions inconnues du reste du monde",
+        B: "Pas un bruit, l'autre sait ce que vous pensé",
+    },
+},
+{
+    questionF10: "Au fond, une véritable amie, c’est quoi ?",
+    answer: {
+        A: "Un être que l’on aime malgré ses défauts ou nos désaccords.",
+        B: "Un miroir de mes défauts comme de mes qualités.",
+    },
+},
+];

@@ -247,7 +247,7 @@ body {
   }
   .burger {
     display: none;
-    position: initial
+    position: initial;
     padding: initial;
     width: initial;
     height: initial;
