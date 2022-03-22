@@ -1,0 +1,73 @@
+body {
+  background-image: url('img/Bg.png');
+  background-size: cover;
+  font-family: 'Roboto', sans-serif;
+}
+
+/*----------Form style----------*/
+form {
+  background-color: #fff;
+  padding: 40px 60px;
+  border-radius: 10px;
+  margin: 250px 20px 0px 20px;
+  border-radius: 10px;
+}
+
+form h1 {
+  color: #eb7371;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+form .inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+form .inputs input[type='text'],
+input[type='text'] {
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  outline: none;
+  margin-bottom: 15px;
+}
+
+form button:active {
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+form button {
+  padding: 15px 25px;
+  border-radius: 5px;
+  border: none;
+  font-size: 15px;
+  color: #fff;
+  background-color: #eb7371;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+button a {
+  text-decoration: none;
+  color: white;
+}
+.inputs.success input {
+  border-color: #2ecc71;
+}
+
+.inputs.error input {
+  border-color: #e74c3c;
+}
+/*----------MediaQueries / Desktop----------*/
+@media screen and (min-width: 1350px) {
+  body {
+    background-image: url('img/Bg_desktop.png');
+    background-size: cover;
+  }
+  form {
+    margin: 350px 500px 0px 500px;
+  }
+}

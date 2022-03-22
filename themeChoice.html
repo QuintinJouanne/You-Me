@@ -4,10 +4,59 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styleThemeChoice.css" />
     <title>Carroussel</title>
   </head>
   <body>
-    <h1>Theme Choice</h1>
+    <div class="mainContainer">
+      <p class="txtContainer">
+        Intéressé par vos relations amicales ? Professionnelles ? Amoureuses ?
+      </p>
+      <div class="sliderContainer">
+        <div class="arrowLeft">
+          <img
+            class="arrowImg"
+            src="img/arrowLeft.png"
+            alt="Arrow left button"
+          />
+        </div>
+        <div>
+          <p class="choiceCategories">Relations Amoureuses</p>
+        </div>
+        <div class="arrowRight">
+          <img
+            class="arrowImg"
+            src="img/arrowRight.png"
+            alt="Arrow right button"
+          />
+        </div>
+      </div>
+      <div class="imgContainer">
+
+        <div class="card love">
+          <img
+            class="isActive choice loveImg loveImgdebase"
+            src="img/love_detoure.png"
+            alt="Grapefruit slice atop a pile of other slices"
+          />
+        </div>
+
+        <div class="card job">
+          <img
+            class="choice jobImg jobImgPosdebase"
+            src="img/job_detoure.png"
+            alt="Grapefruit slice atop a pile of other slices"
+          /></div>
+
+        <div class="card friend">
+          <img
+          class="choice friendshipImg friendImgPosdebase"
+          src="img/friends_detoure.png"
+
+          alt="Grapefruit slice atop a pile of other slices"
+        /></div>
+    </div>
     <script src="main.js"></script>
+    <script src="scriptThemeChoice.js"></script>
   </body>
 </html>
