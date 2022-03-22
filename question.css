@@ -12,6 +12,9 @@
   --button-color-selected-friend: #664300;
 }
 /* CSS RULES FOR WORK-QUESTIONS*/
+* {
+  margin: 0;
+}
 
 body {
   font-family: 'Kumbh Sans', sans-serif;
@@ -27,24 +30,28 @@ body {
 #progressbar {
   width: 80%;
   height: 40px;
+  background-color: var(--main-button-color-work);
+  border-radius: 20px;
 }
 
 .question-container {
+  width: 100%;
+  height: 200px;
   display: flex;
   justify-content: center;
   margin-top: 10px;
-  font-size: 15pt;
+  font-size: 17pt;
   text-align: center;
+  font-weight: bold;
 }
 
-.containerAB {
-  display: flex;
-  height: 250px;
-  justify-content: center;
-  margin-top: 40px;
+.question-container p {
+  width: 70%;
 }
 
 .boutonAB {
+  width: 100%;
+  height: 350px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -53,32 +60,30 @@ body {
 
 .buttonA {
   background-color: var(--main-button-color-work);
-  width: 200px;
-  height: 100px;
+  width: 70%;
+  height: 150px;
   border-radius: 20px;
   cursor: pointer;
   box-shadow: 13px 14px 24px 0px rgba(0, 0, 0, 0.35);
   transition: 0.8s;
 }
 
-.buttonA:hover {
-  width: 220px;
-  height: 120px;
+.buttonA:focus {
+  background-color: var(--button-color-selected-work);
 }
 
 .buttonB {
   background-color: var(--main-button-color-work);
-  width: 200px;
-  height: 100px;
+  width: 70%;
+  height: 150px;
   border-radius: 20px;
   cursor: pointer;
   box-shadow: 13px 14px 24px 0px rgba(0, 0, 0, 0.35);
   transition: 0.8s;
 }
 
-.buttonB:hover {
-  width: 220px;
-  height: 120px;
+.buttonB:focus {
+  background-color: var(--button-color-selected-work);
 }
 
 .bouton-next {
@@ -87,7 +92,7 @@ body {
   height: 100px;
   justify-content: flex-end;
   align-items: flex-end;
-  margin-top: 90px;
+  margin-top: 30px;
 }
 
 .next {
@@ -117,66 +122,69 @@ body {
 #progressbar2 {
   width: 80%;
   height: 40px;
+  background-color: var(--main-button-color-love);
+  border-radius: 20px;
 }
 
 .question-container2 {
+  width: 100%;
+  height: 200px;
   display: flex;
   justify-content: center;
   margin-top: 10px;
-  font-size: 15pt;
+  font-size: 17pt;
   text-align: center;
+  font-weight: bold;
 }
 
-.containerAB2 {
-  display: flex;
-  height: 250px;
-  justify-content: center;
-  margin-top: 60px;
+.question-container2 p {
+  width: 70%;
 }
 
 .boutonAB2 {
+  width: 100%;
+  height: 350px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
 }
 
 .buttonA2 {
   background-color: var(--main-button-color-love);
-  width: 200px;
-  height: 100px;
+  width: 70%;
+  height: 150px;
   border-radius: 20px;
   cursor: pointer;
   box-shadow: 13px 14px 24px 0px rgba(0, 0, 0, 0.35);
   transition: 0.8s;
 }
 
-.buttonA2:hover {
-  width: 220px;
-  height: 120px;
+.buttonA2:focus {
+  background-color: var(--button-color-selected-love);
 }
 
 .buttonB2 {
   background-color: var(--main-button-color-love);
-  width: 200px;
-  height: 100px;
+  width: 70%;
+  height: 150px;
   border-radius: 20px;
   cursor: pointer;
   box-shadow: 13px 14px 24px 0px rgba(0, 0, 0, 0.35);
   transition: 0.8s;
 }
 
-.buttonB2:hover {
-  width: 220px;
-  height: 120px;
+.buttonB2:focus {
+  background-color: var(--button-color-selected-love);
 }
 
-.bu .bouton-next2 {
+.bouton-next2 {
   display: flex;
   width: 100%;
   height: 100px;
   justify-content: flex-end;
   align-items: flex-end;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 .next2 {
@@ -185,12 +193,10 @@ body {
   margin-right: 20px;
   border-radius: 50%;
   cursor: pointer;
-  transition: 0.8s;
 }
 
-.next2:hover {
-  width: 60px;
-  height: 60px;
+.next2:active {
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 /*CSS RULES FOR FRIEND-QUESTION*/
@@ -209,57 +215,60 @@ body {
 #progressbar3 {
   width: 80%;
   height: 40px;
+  background-color: var(--main-button-color-friend);
+  border-radius: 20px;
 }
 
 .question-container3 {
+  width: 100%;
+  height: 200px;
   display: flex;
   justify-content: center;
   margin-top: 10px;
-  font-size: 15pt;
+  font-size: 17pt;
   text-align: center;
+  font-weight: bold;
 }
 
-.containerAB3 {
-  display: flex;
-  height: 250px;
-  justify-content: center;
-  margin-top: 40px;
+.question-container3 p {
+  width: 70%;
 }
 
 .boutonAB3 {
+  width: 100%;
+  height: 350px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  align-items: center;
 }
 
 .buttonA3 {
   background-color: var(--main-button-color-friend);
-  width: 200px;
-  height: 100px;
+  width: 70%;
+  height: 150px;
   border-radius: 20px;
   cursor: pointer;
   box-shadow: 13px 14px 24px 0px rgba(0, 0, 0, 0.35);
   transition: 0.8s;
 }
 
-.buttonA3:hover {
-  width: 220px;
-  height: 120px;
+.buttonA3:focus {
+  background-color: var(--button-color-selected-friend);
 }
 
 .buttonB3 {
   background-color: var(--main-button-color-friend);
-  width: 200px;
-  height: 100px;
+  width: 70%;
+  height: 150px;
   border-radius: 20px;
   cursor: pointer;
   box-shadow: 13px 14px 24px 0px rgba(0, 0, 0, 0.35);
   transition: 0.8s;
 }
 
-.buttonB3:hover {
-  width: 220px;
-  height: 120px;
+.buttonB3:focus {
+  background-color: var(--button-color-selected-friend);
 }
 
 .bouton-next3 {
@@ -268,7 +277,7 @@ body {
   height: 100px;
   justify-content: flex-end;
   align-items: flex-end;
-  margin-top: 90px;
+  margin-top: 30px;
 }
 
 .next3 {
@@ -277,10 +286,8 @@ body {
   margin-right: 20px;
   border-radius: 50%;
   cursor: pointer;
-  transition: 0.8s;
 }
 
-.next3:hover {
-  width: 60px;
-  height: 60px;
+.next3:active {
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
