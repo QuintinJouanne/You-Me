@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500;700;800;900&display=swap");
 
 /* Variables */
 :root {
@@ -7,10 +7,10 @@
   --navbar-color-work: #9977bb;
   --navbar-color-love: #bc6a47;
   --navbar-color-friend: #974420;
-  --navbar-background-color-work: #c6ddff;
-  --navbar-background-color-love: #f6dddd;
-  --navbar-background-color-friend: #fde5b6;
-  --navbar-background-home: url('image/background.png');
+  --navbar-background-work: #c6ddff;
+  --navbar-background-love: #f6dddd;
+  --navbar-background-friend: #fde5b6;
+  --navbar-background-home: url("image/background.png");
 }
 
 /* Reset */
@@ -28,7 +28,7 @@ ul {
 body {
   margin: 0;
   font-size: var(--font-size);
-  font-family: 'Kumbh Sans', sans-serif;
+  font-family: "Kumbh Sans", sans-serif;
 }
 
 /* Navbar */
@@ -110,7 +110,7 @@ body {
 }
 .bar::before,
 .bar::after {
-  content: '';
+  content: "";
   width: 45px;
   height: 4px;
   position: absolute;
@@ -218,4 +218,127 @@ body {
 }
 .background-color-friend {
   background-color: var(--navbar-background-friend);
+}
+
+/* */
+/* */
+/* Desktop version */
+@media screen and (min-width: 768px) {
+  .navbar__links {
+    overflow: initial;
+    flex-direction: initial;
+    width: initial;
+    height: initial;
+    position: initial;
+    top: initial;
+    right: initial;
+    transform: initial;
+    transition: initial;
+  }
+  .navbar__link {
+    transform: initial;
+    transition: initial;
+  }
+  .navbar__link > a {
+    display: initial;
+    padding: initial;
+    font-size: initial;
+    transition: initial;
+  }
+  .burger {
+    display: none;
+    position: initial
+    padding: initial;
+    width: initial;
+    height: initial;
+    border: initial;
+    background: initial;
+    cursor: initial;
+  }
+  
+  .show-nav .navbar__links {
+    width: initial;
+    transform: initial;
+  }
+  .show-nav .navbar__link {
+    transform: initial;
+  }
+  .navbar__link > a:hover {
+    padding-left: initial;
+    letter-spacing: initial;
+  }
+  .navbar__link > a::after {
+    display: block;
+    content: "";
+    width: 0;
+    height: 1px;
+    transition: width 0.4s;
+  }
+  .navbar__link:hover > a::after {
+    width: 100%;
+  }
+  .bar {
+    display: initial;
+    width: initial;
+    height: initial;
+    border-radius: initial;
+    transition: initial;
+  }
+  .bar::before,
+  .bar::after {
+    content: "";
+    width: initial;
+    height: initial;
+    position: initial;
+    left: initial;
+    border-radius: initial;
+    transition: initial;
+  }
+  .bar::before {
+    transform: initial;
+  }
+  .bar::after {
+    transform: initial;
+  }
+  .show-nav .bar {
+    width: initial;
+    background: initial;
+  }
+  .show-nav .bar::before {
+    transform: initial;
+  }
+  .show-nav .bar::after {
+    transform: initial;
+  }
+  .show-nav .first {
+    transition: initial;
+  }
+  .show-nav .second {
+    transition: initial;
+  }
+  .show-nav .third {
+    transition: initial;
+  }
+  .show-nav .four {
+    transition: initial;
+  }
+
+/* Colors home */
+.color-home > a::after {
+  background: var(--navbar-color-home);
+}
+
+/* Colors work */
+.color-work > a::after {
+  background: var(--navbar-color-work);
+}
+
+/* Colors love */
+  .color-love > a::after {
+    background: var(--navbar-color-love);
+}
+
+/* Colors friend */
+.color-friend > a::after {
+  background: var(--navbar-color-friend);
 }
