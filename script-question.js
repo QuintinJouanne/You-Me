@@ -20,14 +20,12 @@ const progress = function() {
 //OBJET QUESTIONS//
 
 
-
 const questionsWork = [
     {
     questionW1: "Selon vous, choisir un métier, c'est :",
     answer: {
         A: "S'assurer des débouchés, un emploi",
         B: "Réaliser tous ses rêves",
-<<<<<<< HEAD
     },
 },
 {
@@ -40,7 +38,7 @@ const questionsWork = [
 {
   questionW3: "Vous aimez plutot travailler :",
   answer: {
-=======
+
     }
     const questionW2 = {
         2: "Préfèrez-vous travailler seul(e) ou en equipe ?",
@@ -49,7 +47,6 @@ const questionsWork = [
     }
     const questionW3 = {
         3: "Vous aimez plutot travailler :",
->>>>>>> Dev
         A: "En entreprise.",
         B: "En remote.",
     },
@@ -85,6 +82,9 @@ const questionW8 = {
 */
 
 
+const quesionLove = [
+    const questionL1 = {
+        1: "Vous avez rencontré votre âme sœur il y a 6 mois de cela, comment vous imaginez-vous dans 1 an :",
 let answerJoueur1 = 0;
 
 for (let i = 0; i < questionsWork.length; i++) {
@@ -169,6 +169,8 @@ const quesionLove = [
 
 
 const questionFriend = [
+    const questionF1 = {
+        1:" L’affirmation qui me correspond le mieux…",
 {
     questionF1: " L’affirmation qui me correspond le mieux…",
     answer: {
@@ -181,6 +183,47 @@ const questionFriend = [
     answer: {
         A: "Starsky et Hutch… ou Dupond et Dupont !",
         B: "Laurel et Hardy… ou Astérix et Obélix.",
+    }
+    const questionF3 = {
+        3: "A quoi reconnaît-on son/sa meilleur/e ami/e ?",
+        A: "On peut compter sur lui/elle pour recueillir nos confidences et garder nos secrets.",
+        B: "On peut compter sur lui/elle pour ne rien vous épargner : il/elle sera toujours sincère avec moi.",
+    }
+    const questionF4 = {
+        4: "Si on était un tandem de super-héros, on serait…",
+        A: "Batman et Robin.",
+        B: "Groot et Rocket Racoon",
+    }
+    const questionF5 ={
+        5: "Quel est votre animal préféré ?",
+        A: "Chien",
+        B: "Chat",
+    }
+    const questionF6 = {
+        6: "Un défaut que je ne supporte pas…",
+        A: "L’égoïsme.",
+        B: "L’intolérance.",
+    }
+    const questionF7 = {
+        7: "Vous etes accoudé au bar...",
+        A: "Je sais quoi lui commander",
+        B: "On va attendre qu'il/elle revienne des sanitaires",
+    }
+    const questionF8 = {
+    8: "Lorsque tu arrive chez elle/lui...",
+    A: "Tu te sers dans le frigo",
+    B: "Tu demandes poliement",
+    }
+    const questionF9 ={
+    9: "Vous refaite le monde un soir...",
+    A: "Vous utilisez des expressions inconnues du reste du monde",
+    B: "Pas un bruit, l'autre sait ce que vous pensé",
+    }
+    const questionF10 = {
+    10: "Au fond, une véritable amie, c’est quoi ?",
+    A: "Un être que l’on aime malgré ses défauts ou nos désaccords.",
+    B: "Un miroir de mes défauts comme de mes qualités.",
+    }
     },
 },
 {
