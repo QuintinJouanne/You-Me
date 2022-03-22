@@ -50,7 +50,6 @@ body {
   top: 65px;
   right: 0;
   transform: translateX(110%);
-  transition: all 0.5s ease-in-out;
 }
 
 .navbar__link {
@@ -233,7 +232,6 @@ body {
     top: initial;
     right: initial;
     transform: initial;
-    transition: initial;
   }
   .navbar__link {
     transform: initial;
