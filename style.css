@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500;700;800;900&display=swap');
 
 /* Variables */
 :root {
@@ -8,9 +8,9 @@
   --navbar-color-love: #bc6a47;
   --navbar-color-friend: #974420;
   --navbar-background-work: #c6ddff;
-  --navbar-background-love: #f6dddd;
+  --navbar-background-love: url("img/Bg-rouge.png");
   --navbar-background-friend: #fde5b6;
-  --navbar-background-home: url("image/background.png");
+  --navbar-background-home: url('image/background.png');
 }
 
 /* Reset */
@@ -28,7 +28,7 @@ ul {
 body {
   margin: 0;
   font-size: var(--font-size);
-  font-family: "Kumbh Sans", sans-serif;
+  font-family: 'Kumbh Sans', sans-serif;
 }
 
 /* Navbar */
@@ -110,7 +110,7 @@ body {
 }
 .bar::before,
 .bar::after {
-  content: "";
+  content: '';
   width: 45px;
   height: 4px;
   position: absolute;
@@ -199,7 +199,7 @@ body {
   background: var(--navbar-color-love);
 }
 .background-color-love {
-  background-color: var(--navbar-background-love);
+  background: var(--navbar-background-love);
 }
 
 /* Colors friend */
@@ -255,7 +255,7 @@ body {
     background: initial;
     cursor: initial;
   }
-  
+
   .show-nav .navbar__links {
     width: initial;
     transform: initial;
@@ -269,7 +269,7 @@ body {
   }
   .navbar__link > a::after {
     display: block;
-    content: "";
+    content: '';
     width: 0;
     height: 1px;
     transition: width 0.4s;
@@ -286,7 +286,7 @@ body {
   }
   .bar::before,
   .bar::after {
-    content: "";
+    content: '';
     width: initial;
     height: initial;
     position: initial;
@@ -323,22 +323,23 @@ body {
     transition: initial;
   }
 
-/* Colors home */
-.color-home > a::after {
-  background: var(--navbar-color-home);
-}
+  /* Colors home */
+  .color-home > a::after {
+    background: var(--navbar-color-home);
+  }
 
-/* Colors work */
-.color-work > a::after {
-  background: var(--navbar-color-work);
-}
+  /* Colors work */
+  .color-work > a::after {
+    background: var(--navbar-color-work);
+  }
 
-/* Colors love */
+  /* Colors love */
   .color-love > a::after {
     background: var(--navbar-color-love);
-}
+  }
 
-/* Colors friend */
-.color-friend > a::after {
-  background: var(--navbar-color-friend);
+  /* Colors friend */
+  .color-friend > a::after {
+    background: var(--navbar-color-friend);
+  }
 }
