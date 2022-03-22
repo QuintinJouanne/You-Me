@@ -47,7 +47,7 @@ function slidesuivante() {
 
     titleCategories.innerHTML = 'Relations Amoureuses';
 
-    bgBody.classList.add;
+    document.body.style.backgroundImage = "url('img/Bg-rouge.png')";
   }
 
   if (relPro.classList.contains('isActive')) {
@@ -64,6 +64,8 @@ function slidesuivante() {
     relAmi.classList.remove('friendshipImgPos3');
 
     titleCategories.innerHTML = 'Relations Professionnelles';
+
+    document.body.style.backgroundImage = "url('img/Bg-marron.png')";
   }
 
   if (relAmi.classList.contains('isActive')) {
@@ -80,6 +82,8 @@ function slidesuivante() {
     relAmi.classList.remove('friendshipImgPos2');
 
     titleCategories.innerHTML = 'Relations Amicales';
+
+    document.body.style.backgroundImage = "url('img/Bg-bleu.png')";
   }
 }
 
