@@ -8,7 +8,7 @@
   --navbar-color-love: #bc6a47;
   --navbar-color-friend: #974420;
   --navbar-background-work: #c6ddff;
-  --navbar-background-love: #f6dddd;
+  --navbar-background-love: url("img/Bg-rouge.png");
   --navbar-background-friend: #fde5b6;
   --navbar-background-home: url('image/background.png');
 }
@@ -199,7 +199,7 @@ body {
   background: var(--navbar-color-love);
 }
 .background-color-love {
-  background-color: var(--navbar-background-love);
+  background: var(--navbar-background-love);
 }
 
 /* Colors friend */
