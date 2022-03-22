@@ -12,17 +12,20 @@ form {
   margin: 250px 20px 0px 20px;
   border-radius: 10px;
 }
+
 form h1 {
   color: #eb7371;
   text-align: center;
   margin-bottom: 30px;
 }
+
 form .inputs {
   display: flex;
   flex-direction: column;
 }
-form .inputs input[type='email'],
-input[type='password'] {
+
+form .inputs input[type='text'],
+input[type='text'] {
   padding: 15px;
   border: none;
   border-radius: 5px;
@@ -50,6 +53,13 @@ form button {
 button a {
   text-decoration: none;
   color: white;
+}
+.inputs.success input {
+  border-color: #2ecc71;
+}
+
+.inputs.error input {
+  border-color: #e74c3c;
 }
 /*----------MediaQueries / Desktop----------*/
 @media screen and (min-width: 1350px) {
