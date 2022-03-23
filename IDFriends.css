@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
 
 body {
-  background-image: url('img/Bg.png');
+  background-image: url('img/Bg-marron-new.png');
   background-size: cover;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Fredoka', sans-serif;
+  min-height: 100vh;
 }
 
 /*----------Form style----------*/
@@ -60,7 +61,7 @@ button a {
 /*----------MediaQueries / Desktop----------*/
 @media screen and (min-width: 1350px) {
   body {
-    background-image: url('img/Bg_desktop.png');
+    background-image: url('img/Bg-marron-new.png');
     background-size: cover;
   }
   form {
