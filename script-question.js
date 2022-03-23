@@ -17,8 +17,10 @@ const progress = function() {
 }
 
 
-//OBJET QUESTIONS//
+//ARRAY QUESTIONS WORK//
 
+const questionTextElement = document.getElementById('questionText');
+const nextBtnElement = document.getElementById('nextBtn');
 
 const questionsWork = [
     {
@@ -84,7 +86,27 @@ answer: {
         B: "Introverti"
     },
 },
+];
 
+
+let currentIndex = 0;
+
+function updatePageQuestion(currentQuestion) {
+    questionTextElement.innerHTML = currentQuestion.questionsWork;
+}
+
+updatePageQuestion(questionsWork[currentIndex]);
+
+nextBtnElement.addEventListener('click' () => {
+    currentIndex += 1;
+    updatePageQuestion(questionsWork[currentIndex]);
+});
+
+
+
+
+
+//ARRAY QUESTIONS LOVE//
 
 const quesionLove = [ 
     {
@@ -159,7 +181,22 @@ const quesionLove = [
 },
 ];
 
+
+function updatePageQuestion(currentQuestion) {
+    questionTextElement.innerHTML = currentQuestion.questionLove;
+}
+
+updatePageQuestion(questionLove[currentIndex]);
+
+nextBtnElement.addEventListener('click' () => {
+    currentIndex += 1;
+    updatePageQuestion(questionLove[currentIndex]);
+});
+
+
   
+//ARRAY QUESTIONS FRIEND//
+
 
 
 const questionFriend = [
@@ -235,3 +272,17 @@ question: " L’affirmation qui me correspond le mieux…",
     },
 },
 ]
+
+
+
+function updatePageQuestion(currentQuestion) {
+    questionTextElement.innerHTML = currentQuestion.questionFriend;
+}
+
+updatePageQuestion(questionFriend[currentIndex]);
+
+nextBtnElement.addEventListener('click' () => {
+    currentIndex += 1;
+    updatePageQuestion(questionFriend[currentIndex]);
+});
+
