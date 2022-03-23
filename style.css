@@ -8,7 +8,7 @@
   --navbar-color-love: #bc6a47;
   --navbar-color-friend: #974420;
   --navbar-background-work: #c6ddff;
-  --navbar-background-love: #f6dddd;
+  --navbar-background-love: url("img/Bg-rouge.png");
   --navbar-background-friend: #fde5b6;
   --navbar-background-home: url('image/background.png');
 }
@@ -50,7 +50,6 @@ body {
   top: 65px;
   right: 0;
   transform: translateX(110%);
-  transition: all 0.5s ease-in-out;
 }
 
 .navbar__link {
@@ -199,7 +198,7 @@ body {
   background: var(--navbar-color-love);
 }
 .background-color-love {
-  background-color: var(--navbar-background-love);
+  background: var(--navbar-background-love);
 }
 
 /* Colors friend */
@@ -233,7 +232,6 @@ body {
     top: initial;
     right: initial;
     transform: initial;
-    transition: initial;
   }
   .navbar__link {
     transform: initial;
