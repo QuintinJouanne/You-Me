@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>You&Me Compatibility</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="ID.css" />
+    <link rel="stylesheet" href="IDFriends.css" />
   </head>
   <body>
     <nav class="color-home navbar" role="navigation">
@@ -18,7 +18,7 @@
           <a href="index.html">Home</a>
         </li>
         <li class="color-home navbar__link second">
-          <a href="Identifiication.html">Try new mode</a>
+          <a href="themeChoice.html">Try new mode</a>
         </li>
         <li class="color-home navbar__link third">
           <a href="aboutUs.html">About us</a>
@@ -31,20 +31,33 @@
         <span class="color-burger-home bar"></span>
       </button>
     </nav>
-    <form action="themeChoice.html">
+    <form action="question-friend.html">
       <h1>S'identifier</h1>
       <div class="inputs">
-        <label for="name">Nom</label>
-        <input type="text" placeholder="Nom" name="name" required />
+        <label id="lastName" for="name">Nom</label>
+        <input
+          id="inputLastName"
+          type="text"
+          placeholder="Nom"
+          name="name"
+          required
+        />
       </div>
       <div class="inputs">
-        <label for="firstname">Prénom</label>
-        <input type="text" placeholder="Prenom" name="firstname" required />
+        <label id="firstName" for="firstname">Prénom</label>
+        <input
+          id="inputFirstName"
+          type="text"
+          placeholder="Prenom"
+          name="firstname"
+          required
+        />
       </div>
       <div align="center">
         <button id="button" type="submit">C'est parti !!</button>
       </div>
     </form>
+    <script src="ID.js"></script>
     <script src="menuBurger.js"></script>
   </body>
 </html>
