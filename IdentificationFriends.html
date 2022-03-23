@@ -6,10 +6,6 @@
     <title>You&Me Compatibility</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="ID.css" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
-    />
   </head>
   <body>
     <nav class="color-home navbar" role="navigation">
@@ -19,7 +15,7 @@
       </div>
       <ul class="background-color-home navbar__links">
         <li class="color-home navbar__link first">
-          <a href="homepage.html">Home</a>
+          <a href="index.html">Home</a>
         </li>
         <li class="color-home navbar__link second">
           <a href="Identifiication.html">Try new mode</a>
@@ -35,23 +31,18 @@
         <span class="color-burger-home bar"></span>
       </button>
     </nav>
-    <form id="form">
+    <form action="themeChoice.html">
       <h1>S'identifier</h1>
       <div class="inputs">
-        <label for="name">Name</label>
-        <input type="text" placeholder="Nom" id="username" />
-
-        <small>Error message</small>
+        <label for="name">Nom</label>
+        <input type="text" placeholder="Nom" name="name" required />
       </div>
       <div class="inputs">
-        <label for="firstName">Firstname</label>
-        <input type="text" placeholder="Prenom" id="firstName" />
-        <small>Error message</small>
+        <label for="firstname">Prénom</label>
+        <input type="text" placeholder="Prenom" name="firstname" required />
       </div>
       <div align="center">
-        <button id="button" type="submit">
-          <a href="themeChoice.html">C'est parti !!</a>
-        </button>
+        <button id="button" type="submit">C'est parti !!</button>
       </div>
     </form>
     <script src="menuBurger.js"></script>

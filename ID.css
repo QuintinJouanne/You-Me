@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
+
 body {
   background-image: url('img/Bg.png');
   background-size: cover;
@@ -54,13 +56,7 @@ button a {
   text-decoration: none;
   color: white;
 }
-.inputs.success input {
-  border-color: #2ecc71;
-}
 
-.inputs.error input {
-  border-color: #e74c3c;
-}
 /*----------MediaQueries / Desktop----------*/
 @media screen and (min-width: 1350px) {
   body {
