@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
 
 * {
   margin: 0;
@@ -11,7 +12,7 @@ body {
   align-items: center;
   min-height: 100vh;
   font-family: 'Kumbh Sans', sans-serif;
-  background-image: url(img/Bg-rouge.png);
+  background-image: url(img/Bg-rouge-new.png);
   background-size: cover;
 }
 
@@ -56,6 +57,7 @@ body {
   height: 50px;
   background: #27233a;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .arrowImg {
@@ -72,6 +74,10 @@ body {
 }
 
 /* Position 1 */
+
+.card {
+  cursor: pointer;
+}
 
 .loveImgPos1,
 .loveImgdebase {
@@ -198,7 +204,7 @@ body {
 /* Médiaqueries */
 @media screen and (min-width: 540px) {
   body {
-    background-image: url(img/Bg_desktop.png);
+    background-image: url(img/Bg-rouge-new-deskstop.png);
     background-size: cover;
   }
 }

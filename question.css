@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
 :root {
-  --main-bg-color-work: #c6ddff;
-  --main-bg-color-love: url("img/Bg-rouge.png");
-  --main-bg-color-friend: #fde5b6;
-  --main-button-color-work: #96c0ff;
-  --main-button-color-love: #f3a0a0;
-  --main-button-color-friend: #dfb462;
-  --button-color-selected-work: #3e76c9;
-  --button-color-selected-love: #e94f4f;
-  --button-color-selected-friend: #664300;
+  --main-bg-color-work: url('img/Bg-bleu-new.png');
+  --main-bg-color-love: url("img/Bg-rouge-new.png");
+  --main-bg-color-friend: url('img/Bg-marron-new.png');
+  --main-button-color-work: #3980E3;
+  --main-button-color-love: #E33950;
+  --main-button-color-friend: #E38639;
+  --button-color-selected-work: #09377B;
+  --button-color-selected-love: #7B0909;
+  --button-color-selected-friend: #9D581F;
 }
 /* CSS RULES FOR WORK-QUESTIONS*/
 * {
@@ -17,7 +17,9 @@
 
 body {
   font-family: 'Fredoka', sans-serif;
-  background-color: var(--main-bg-color-work);
+  background-image: var(--main-bg-color-work);
+  background-size: cover;
+  min-height: 100vh;
 }
 
 .progress-bar {
@@ -109,7 +111,9 @@ body {
 /*CSS RULES FOR LOVE-QUESTION*/
 .body2 {
   font-family: 'Kumbh Sans', sans-serif;
-  background: var(--main-bg-color-love);
+  background-image: var(--main-bg-color-love);
+  background-size: cover;
+  min-height: 100vh;
 }
 
 .progress-bar2 {
@@ -202,7 +206,9 @@ body {
 
 .body3 {
   font-family: 'Kumbh Sans', sans-serif;
-  background-color: var(--main-bg-color-friend);
+  background-image: var(--main-bg-color-friend);
+  background-size: cover;
+  min-height: 100vh;
 }
 
 .progress-bar3 {

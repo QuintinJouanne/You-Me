@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
 
 /* Variables */
 :root {
@@ -8,7 +8,7 @@
   --navbar-color-love: #bc6a47;
   --navbar-color-friend: #974420;
   --navbar-background-work: #c6ddff;
-  --navbar-background-love: url("img/Bg-rouge.png");
+  --navbar-background-love: url('img/Bg-rouge.png');
   --navbar-background-friend: #fde5b6;
   --navbar-background-home: url('image/background.png');
 }
@@ -28,7 +28,7 @@ ul {
 body {
   margin: 0;
   font-size: var(--font-size);
-  font-family: 'Kumbh Sans', sans-serif;
+  font-family: 'Fredoka', sans-serif;
 }
 
 /* Navbar */
@@ -50,7 +50,6 @@ body {
   top: 65px;
   right: 0;
   transform: translateX(110%);
-  transition: all 0.5s ease-in-out;
 }
 
 .navbar__link {
@@ -233,7 +232,6 @@ body {
     top: initial;
     right: initial;
     transform: initial;
-    transition: initial;
   }
   .navbar__link {
     transform: initial;
