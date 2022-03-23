@@ -47,6 +47,80 @@ function slidesuivante() {
 
     titleCategories.innerHTML = 'Relations Amoureuses';
 
+    document.body.style.backgroundImage = "url('img/Bg-rouge-new.png')";
+  }
+
+  if (relPro.classList.contains('isActive')) {
+    relAmo.classList.add('loveImgPos2');
+    relPro.classList.add('jobImgPos2');
+    relAmi.classList.add('friendshipImgPos2');
+
+    relAmo.classList.remove('loveImgPos1');
+    relPro.classList.remove('jobImgPos1');
+    relAmi.classList.remove('friendshipImgPos1');
+
+    relAmo.classList.remove('loveImgPos3');
+    relPro.classList.remove('jobImgPos3');
+    relAmi.classList.remove('friendshipImgPos3');
+
+    titleCategories.innerHTML = 'Relations Professionnelles';
+
+    document.body.style.backgroundImage = "url('img/Bg-bleu-new.png')";
+  }
+
+  if (relAmi.classList.contains('isActive')) {
+    relAmo.classList.add('loveImgPos3');
+    relPro.classList.add('jobImgPos3');
+    relAmi.classList.add('friendshipImgPos3');
+
+    relAmo.classList.remove('loveImgPos1');
+    relPro.classList.remove('jobImgPos1');
+    relAmi.classList.remove('friendshipImgPos1');
+
+    relAmo.classList.remove('loveImgPos2');
+    relPro.classList.remove('jobImgPos2');
+    relAmi.classList.remove('friendshipImgPos2');
+
+    titleCategories.innerHTML = 'Relations Amicales';
+
+    document.body.style.backgroundImage = "url('img/Bg-marron-new.png')";
+  }
+}
+
+//Précédante
+
+function slideprecedante() {
+  const activeElement = document.querySelector('.isActive');
+
+  activeElement.classList.remove('isActive');
+
+  if (count < nbrChoice - 1) {
+    count--;
+  } else {
+    count = 0;
+  }
+
+  let nextActive = imageElements[count];
+
+  console.log('nextActive', nextActive);
+
+  nextActive.classList.add('isActive');
+
+  if (relAmo.classList.contains('isActive')) {
+    relAmo.classList.add('loveImgPos1');
+    relPro.classList.add('jobImgPos1');
+    relAmi.classList.add('friendshipImgPos1');
+
+    relAmo.classList.remove('loveImgPos2');
+    relPro.classList.remove('jobImgPos2');
+    relAmi.classList.remove('friendshipImgPos2');
+
+    relAmo.classList.remove('loveImgPos3');
+    relPro.classList.remove('jobImgPos3');
+    relAmi.classList.remove('friendshipImgPos3');
+
+    titleCategories.innerHTML = 'Relations Amoureuses';
+
     document.body.style.backgroundImage = "url('img/Bg-rouge.png')";
   }
 
@@ -96,4 +170,4 @@ function removeOriginPos() {
 
 suivant.addEventListener('click', slidesuivante);
 suivant.addEventListener('click', removeOriginPos);
-precedant.addEventListener('click', slidesuivante);
+precedant.addEventListener('click', slideprecedante);
