@@ -6,23 +6,6 @@ const relPro = document.querySelector('.jobImg');
 const relAmi = document.querySelector('.friendshipImg');
 const relAmo = document.querySelector('.loveImg');
 
-const jobChoice = document.getElementById('jobChoice');
-const loveChoice = document.getElementById('loveChoice');
-const friendChoice = document.getElementById('card friend');
-
-jobChoice.addEventListener('click', () => {
-  localStorage.setItem('theme', 'job');
-  window.location.href = 'Identification.html';
-});
-jobChoice.addEventListener('click', () => {
-  localStorage.setItem('theme', 'love');
-  window.location.href = 'Identification.html';
-});
-jobChoice.addEventListener('click', () => {
-  localStorage.setItem('theme', 'friend');
-  window.location.href = 'Identification.html';
-});
-
 const imageElements = [relPro, relAmi, relAmo];
 
 const suivant = document.querySelector('.arrowRight');
@@ -65,6 +48,11 @@ function slidesuivante() {
     titleCategories.innerHTML = 'Relations Amoureuses';
 
     document.body.style.backgroundImage = "url('img/Bg-rouge-new.png')";
+
+    if (window.matchMedia('(min-width: 600px)').matches) {
+      document.body.style.backgroundImage =
+        "url('img/Bg-rouge-new-deskstop.png')";
+    }
   }
 
   if (relPro.classList.contains('isActive')) {
@@ -83,6 +71,11 @@ function slidesuivante() {
     titleCategories.innerHTML = 'Relations Professionnelles';
 
     document.body.style.backgroundImage = "url('img/Bg-bleu-new.png')";
+
+    if (window.matchMedia('(min-width: 600px)').matches) {
+      document.body.style.backgroundImage =
+        "url('img/Bg-bleu-new-deskstop.png')";
+    }
   }
 
   if (relAmi.classList.contains('isActive')) {
@@ -101,80 +94,11 @@ function slidesuivante() {
     titleCategories.innerHTML = 'Relations Amicales';
 
     document.body.style.backgroundImage = "url('img/Bg-marron-new.png')";
-  }
-}
 
-//Précédante
-
-function slideprecedante() {
-  const activeElement = document.querySelector('.isActive');
-
-  activeElement.classList.remove('isActive');
-
-  if (count < nbrChoice - 1) {
-    count--;
-  } else {
-    count = 0;
-  }
-
-  let nextActive = imageElements[count];
-
-  console.log('nextActive', nextActive);
-
-  nextActive.classList.add('isActive');
-
-  if (relAmo.classList.contains('isActive')) {
-    relAmo.classList.add('loveImgPos1');
-    relPro.classList.add('jobImgPos1');
-    relAmi.classList.add('friendshipImgPos1');
-
-    relAmo.classList.remove('loveImgPos2');
-    relPro.classList.remove('jobImgPos2');
-    relAmi.classList.remove('friendshipImgPos2');
-
-    relAmo.classList.remove('loveImgPos3');
-    relPro.classList.remove('jobImgPos3');
-    relAmi.classList.remove('friendshipImgPos3');
-
-    titleCategories.innerHTML = 'Relations Amoureuses';
-
-    document.body.style.backgroundImage = "url('img/Bg-rouge.png')";
-  }
-
-  if (relPro.classList.contains('isActive')) {
-    relAmo.classList.add('loveImgPos2');
-    relPro.classList.add('jobImgPos2');
-    relAmi.classList.add('friendshipImgPos2');
-
-    relAmo.classList.remove('loveImgPos1');
-    relPro.classList.remove('jobImgPos1');
-    relAmi.classList.remove('friendshipImgPos1');
-
-    relAmo.classList.remove('loveImgPos3');
-    relPro.classList.remove('jobImgPos3');
-    relAmi.classList.remove('friendshipImgPos3');
-
-    titleCategories.innerHTML = 'Relations Professionnelles';
-
-    document.body.style.backgroundImage = "url('img/Bg-marron.png')";
-  }
-
-  if (relAmi.classList.contains('isActive')) {
-    relAmo.classList.add('loveImgPos3');
-    relPro.classList.add('jobImgPos3');
-    relAmi.classList.add('friendshipImgPos3');
-
-    relAmo.classList.remove('loveImgPos1');
-    relPro.classList.remove('jobImgPos1');
-    relAmi.classList.remove('friendshipImgPos1');
-
-    relAmo.classList.remove('loveImgPos2');
-    relPro.classList.remove('jobImgPos2');
-    relAmi.classList.remove('friendshipImgPos2');
-
-    titleCategories.innerHTML = 'Relations Amicales';
-
-    document.body.style.backgroundImage = "url('img/Bg-bleu.png')";
+    if (window.matchMedia('(min-width: 600px)').matches) {
+      document.body.style.backgroundImage =
+        "url('img/Bg-marron-new-deskstop.png')";
+    }
   }
 }
 
@@ -186,4 +110,22 @@ function removeOriginPos() {
 
 suivant.addEventListener('click', slidesuivante);
 suivant.addEventListener('click', removeOriginPos);
-precedant.addEventListener('click', slideprecedante);
+precedant.addEventListener('click', slidesuivante);
+
+//
+
+const jobChoice = document.getElementById('jobChoice');
+const loveChoice = document.getElementById('loveChoice');
+const friendChoice = document.getElementById('card friend');
+jobChoice.addEventListener('click', () => {
+  localStorage.setItem('theme', 'job');
+  window.location.href = 'https://twitter.com/';
+});
+loveChoice.addEventListener('click', () => {
+  localStorage.setItem('theme', 'love');
+  window.location.href = 'https://www.facebook.com/';
+});
+friendChoice.addEventListener('click', () => {
+  localStorage.setItem('theme', 'friend');
+  window.location.href = 'https://www.google.com/';
+});
