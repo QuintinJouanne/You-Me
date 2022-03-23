@@ -2,7 +2,7 @@
 
 /* Variables */
 :root {
-  --font-size: 1rem;
+  --font-size: 1.5rem;
   --navbar-color: #ffffff;
 }
 
@@ -19,18 +19,22 @@ ul {
 
 /* Basic style */
 body {
-  font-size: var(--font-size);
   font-family: 'Fredoka', sans-serif;
   margin: 0;
 }
 
+.displayNone {
+  width: 100%;
+}
+
 /* Navbar */
 .navbar {
+  margin: 10px 10px 0px 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 10px;
-  font-size: 1.1rem;
+  font-size: var(--font-size);
   background: none;
   color: var(--navbar-color);
 }
@@ -47,7 +51,7 @@ body {
 }
 
 .navbar__link {
-  padding: 0 10px;
+  padding: 20px 10px;
   transform: translateX(101%);
   transition: all 0.5s ease-in-out;
 }
@@ -55,7 +59,7 @@ body {
   text-decoration: none;
   display: block;
   padding: 1rem;
-  font-size: 1.6rem;
+  font-size: var(--font-size);
   transition: all 0.4s ease-in-out;
   color: var(--navbar-color);
 }
@@ -145,6 +149,10 @@ body {
 /* */
 /* Desktop version */
 @media screen and (min-width: 768px) {
+  .navbar {
+    margin: 20px 40px 0px 40px;
+    font-size: var(--font-size);
+  }
   .navbar__links {
     overflow: initial;
     flex-direction: initial;
@@ -158,12 +166,14 @@ body {
   .navbar__link {
     transform: initial;
     transition: initial;
+    padding: 0px 30px 0px 30px;
   }
   .navbar__link > a {
     display: initial;
     padding: initial;
     font-size: initial;
     transition: initial;
+    font-size: var(--font-size);
   }
   .burger {
     display: none;
