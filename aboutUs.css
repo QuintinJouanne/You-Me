@@ -5,9 +5,16 @@
 }
 
 body {
-  background-image: url('image/background.png');
-  background-size: 100%;
   font-family: 'Fredoka', sans-serif;
+  background-image: url('img/Bg-all.png');
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.aboutUsSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .aboutUs {
@@ -15,8 +22,12 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 180px;
-  color: #27233a;
+  margin-top: 70px;
+  color: #ffffff;
+  background: #27233a;
+  width: 75%;
+  border-radius: 10px;
+  padding: 15px 0px 20px 0px;
 }
 
 .aboutUsTitle {
@@ -40,7 +51,12 @@ body {
   align-items: center;
   margin-top: 70px;
   padding-bottom: 30px;
-  color: #27233a;
+  color: #ffffff;
+  background: #27233a;
+  width: 75%;
+  border-radius: 10px;
+  padding: 15px 0px 20px 0px;
+  margin-bottom: 50px;
 }
 
 .whyTitle {
