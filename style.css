@@ -3,14 +3,7 @@
 /* Variables */
 :root {
   --font-size: 1rem;
-  --navbar-color-home: #27233a;
-  --navbar-color-work: #9977bb;
-  --navbar-color-love: #bc6a47;
-  --navbar-color-friend: #974420;
-  --navbar-background-work: #c6ddff;
-  --navbar-background-love: url('img/Bg-rouge.png');
-  --navbar-background-friend: #fde5b6;
-  --navbar-background-home: url('image/background.png');
+  --navbar-color: #ffffff;
 }
 
 /* Reset */
@@ -26,9 +19,9 @@ ul {
 
 /* Basic style */
 body {
-  margin: 0;
   font-size: var(--font-size);
   font-family: 'Fredoka', sans-serif;
+  margin: 0;
 }
 
 /* Navbar */
@@ -39,6 +32,7 @@ body {
   padding: 10px;
   font-size: 1.1rem;
   background: none;
+  color: var(--navbar-color);
 }
 .navbar__links {
   overflow: hidden;
@@ -63,6 +57,7 @@ body {
   padding: 1rem;
   font-size: 1.6rem;
   transition: all 0.4s ease-in-out;
+  color: var(--navbar-color);
 }
 .burger {
   display: block;
@@ -83,8 +78,6 @@ body {
   height: 40px;
   margin-top: 20px;
 }
-
-/* ajouts */
 .show-nav .navbar__links {
   width: 100vw;
   transform: translateX(0);
@@ -106,6 +99,7 @@ body {
   height: 4px;
   border-radius: 3px;
   transition: all 0.5s ease-in-out;
+  background: var(--navbar-color);
 }
 .bar::before,
 .bar::after {
@@ -116,6 +110,7 @@ body {
   left: 0;
   border-radius: 3px;
   transition: all 0.5s ease-in-out;
+  background: var(--navbar-color);
 }
 .bar::before {
   transform: translateY(-12px);
@@ -144,79 +139,6 @@ body {
 }
 .show-nav .four {
   transition: all 1.3s ease-out;
-}
-
-/* Colors home */
-.color-home {
-  color: var(--navbar-color-home);
-}
-.color-home > a {
-  color: var(--navbar-color-home);
-}
-.color-burger-home {
-  background: var(--navbar-color-home);
-}
-.color-burger-home::before,
-.color-burger-home::after {
-  background: var(--navbar-color-home);
-}
-.background-color-home {
-  background-image: var(--navbar-background-home);
-  background-size: 100%;
-}
-
-/* Colors work */
-.color-work {
-  color: var(--navbar-color-work);
-}
-.color-work > a {
-  color: var(--navbar-color-work);
-}
-.color-burger-work {
-  background: var(--navbar-color-work);
-}
-.color-burger-work::before,
-.color-burger-work::after {
-  background: var(--navbar-color-work);
-}
-.background-color-work {
-  background-color: var(--navbar-background-work);
-}
-
-/* Colors love */
-.color-love {
-  color: var(--navbar-color-love);
-}
-.color-love > a {
-  color: var(--navbar-color-love);
-}
-.color-burger-love {
-  background: var(--navbar-color-love);
-}
-.color-burger-love::before,
-.color-burger-love::after {
-  background: var(--navbar-color-love);
-}
-.background-color-love {
-  background: var(--navbar-background-love);
-}
-
-/* Colors friend */
-.color-friend {
-  color: var(--navbar-color-friend);
-}
-.color-friend > a {
-  color: var(--navbar-color-friend);
-}
-.color-burger-friend {
-  background: var(--navbar-color-friend);
-}
-.color-burger-friend::before,
-.color-burger-friend::after {
-  background: var(--navbar-color-friend);
-}
-.background-color-friend {
-  background-color: var(--navbar-background-friend);
 }
 
 /* */
@@ -271,6 +193,7 @@ body {
     width: 0;
     height: 1px;
     transition: width 0.4s;
+    background: var(--navbar-color);
   }
   .navbar__link:hover > a::after {
     width: 100%;
@@ -319,25 +242,5 @@ body {
   }
   .show-nav .four {
     transition: initial;
-  }
-
-  /* Colors home */
-  .color-home > a::after {
-    background: var(--navbar-color-home);
-  }
-
-  /* Colors work */
-  .color-work > a::after {
-    background: var(--navbar-color-work);
-  }
-
-  /* Colors love */
-  .color-love > a::after {
-    background: var(--navbar-color-love);
-  }
-
-  /* Colors friend */
-  .color-friend > a::after {
-    background: var(--navbar-color-friend);
   }
 }
