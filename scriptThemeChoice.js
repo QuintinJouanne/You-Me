@@ -6,6 +6,23 @@ const relPro = document.querySelector('.jobImg');
 const relAmi = document.querySelector('.friendshipImg');
 const relAmo = document.querySelector('.loveImg');
 
+const jobChoice = document.getElementById('jobChoice');
+const loveChoice = document.getElementById('loveChoice');
+const friendChoice = document.getElementById('card friend');
+
+jobChoice.addEventListener('click', () => {
+  localStorage.setItem('theme', 'job');
+  window.location.href='Identification.html';
+});
+jobChoice.addEventListener('click', () => {
+  localStorage.setItem('theme', 'love');
+  window.location.href='Identification.html';
+});
+jobChoice.addEventListener('click', () => {
+  localStorage.setItem('theme', 'friend');
+  window.location.href='Identification.html';
+});
+
 const imageElements = [relPro, relAmi, relAmo];
 
 const suivant = document.querySelector('.arrowRight');

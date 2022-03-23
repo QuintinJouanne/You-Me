@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500;700;800;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
 :root {
   --main-bg-color-work: #c6ddff;
-  --main-bg-color-love: #f6dddd;
+  --main-bg-color-love: url("img/Bg-rouge.png");
   --main-bg-color-friend: #fde5b6;
   --main-button-color-work: #96c0ff;
   --main-button-color-love: #f3a0a0;
@@ -17,7 +16,7 @@
 }
 
 body {
-  font-family: 'Kumbh Sans', sans-serif;
+  font-family: 'Fredoka', sans-serif;
   background-color: var(--main-bg-color-work);
 }
 
@@ -110,7 +109,7 @@ body {
 /*CSS RULES FOR LOVE-QUESTION*/
 .body2 {
   font-family: 'Kumbh Sans', sans-serif;
-  background-color: var(--main-bg-color-love);
+  background: var(--main-bg-color-love);
 }
 
 .progress-bar2 {
