@@ -34,17 +34,30 @@
     <form action="question-work.html">
       <h1>S'identifier</h1>
       <div class="inputs">
-        <label for="name">Nom</label>
-        <input type="text" placeholder="Nom" name="name" required />
+        <label id="lastName" for="name">Nom</label>
+        <input
+          id="inputLastName"
+          type="text"
+          placeholder="Nom"
+          name="name"
+          required
+        />
       </div>
       <div class="inputs">
-        <label for="firstname">Prénom</label>
-        <input type="text" placeholder="Prenom" name="firstname" required />
+        <label id="firstName" for="firstname">Prénom</label>
+        <input
+          id="inputFirstName"
+          type="text"
+          placeholder="Prenom"
+          name="firstname"
+          required
+        />
       </div>
       <div align="center">
         <button id="button" type="submit">C'est parti !!</button>
       </div>
     </form>
     <script src="menuBurger.js"></script>
+    <script src="ID.js"></script>
   </body>
 </html>
