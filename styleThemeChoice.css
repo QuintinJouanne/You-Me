@@ -57,6 +57,7 @@ body {
   height: 50px;
   background: #27233a;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .arrowImg {
@@ -73,6 +74,10 @@ body {
 }
 
 /* Position 1 */
+
+.card {
+  cursor: pointer;
+}
 
 .loveImgPos1,
 .loveImgdebase {
