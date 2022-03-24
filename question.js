@@ -1,3 +1,5 @@
+const themes = localStorage.getItem('theme');
+
 // PROGRESS BAR //
 
 const progressBar = document.querySelector('.progress-bar');
@@ -288,3 +290,8 @@ nextBtnElement.addEventListener('click', () => {
     }
   }
 });
+
+
+
+const resultObject
+document.body.style.backgroundImage = `url(${resultObject.background})`;
