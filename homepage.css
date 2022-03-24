@@ -1,11 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
-
 * {
   margin: 0;
 }
 
 body {
-  font-family: 'Fredoka', sans-serif;
   background-image: url('img/Bg-all.png');
   background-size: cover;
   min-height: 100vh;
@@ -38,7 +35,7 @@ header h1 {
   justify-content: center;
   text-align: center;
   align-items: center;
-  margin-top: 150px;
+  margin-top: 100px;
   background: #27233a;
   border-radius: 10px;
   width: 80%;
@@ -66,13 +63,17 @@ header h1 {
 }
 
 .buttonLetsgo {
-  width: 65%;
+  width: 75%;
   height: 194px;
   background: #27233a;
-  box-shadow: 0px 2px 4px #000000;
   border-radius: 150px / 97px;
   border-color: #27233a;
   font-weight: 700;
   font-size: 38px;
   color: #ffffff;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
+}
+
+.buttonLetsgo:active {
+  box-shadow: inset 0px 6px 6px rgba(0, 0, 0, 0.5);
 }

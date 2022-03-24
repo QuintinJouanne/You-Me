@@ -6,9 +6,16 @@
 
 body {
   font-family: 'Fredoka', sans-serif;
-  background-image: url('img/Bg-all.png');
-  background-size: cover;
   min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  background-image: url('img/Bg-all.png');
+  background-size: 100% auto;
+}
+
+.backgroundAboutUs {
+  height: 100%;
+  width: 100%;
 }
 
 .aboutUsSection {
