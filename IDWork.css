@@ -56,7 +56,7 @@ form button {
 /*----------MediaQueries / Desktop----------*/
 @media screen and (min-width: 1350px) {
   body {
-    background-image: url('img/Bg-bleu-new.png');
+    background-image: url('img/Bg-bleu-new-deskstop.png');
     background-size: cover;
   }
   form {

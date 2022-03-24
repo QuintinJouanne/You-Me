@@ -61,7 +61,7 @@ button a {
 /*----------MediaQueries / Desktop----------*/
 @media screen and (min-width: 1350px) {
   body {
-    background-image: url('img/Bg-marron-new.png');
+    background-image: url('img/Bg-marron-new-deskstop.png');
     background-size: cover;
   }
   form {
