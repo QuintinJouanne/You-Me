@@ -43,16 +43,19 @@ if (answersPlayerOne && answersPlayerTwo) {
         text: 'Sincérement, adoptez chacun un animal de compagnie serait une idée plus judicieuse.',
         image: 'images/tenor (1).gif',
         title: 'IM-PO-SSI-BLE',
+        background: 'img/Bg-rouge.png',
       },
       mediumCompat: {
         text: 'Revez pas, ca va pas durer plus longtemps...',
         image: 'https://media.giphy.com/media/26xBRiIYbyjCzYMAU/giphy.gif',
         title: "l'amour dure 3ans",
+        background: 'img/Bg-rouge.png',
       },
       hightCompat: {
         text: 'Félicitations ! Vous venez de rencontrer votre âme soeur, ne nous remerciez pas.',
         image: 'https://media.giphy.com/media/vDkkDM5m8ITmM/giphy.gif',
         title: 'Le début d"une histoire',
+        background: 'img/Bg-rouge.png',
       },
     },
     friend: {
@@ -115,4 +118,7 @@ if (answersPlayerOne && answersPlayerTwo) {
 
   const contentGif = document.getElementById('gif');
   contentGif.src = resultObject.image;
+
+  const contentBg = document.getElementById('backGround');
+  contentBg.background = resultObject.background;
 }
