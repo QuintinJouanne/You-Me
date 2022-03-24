@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
 
 body {
-  background-image: url('img/Bg-rouge-new.png');
+  background-image: url('img/Bg-marron-new.png');
   background-size: cover;
   background-position: center;
   font-family: 'Fredoka', sans-serif;
@@ -63,11 +63,16 @@ button a {
   text-decoration: none;
   color: white;
 }
+.buttonAlign {
+  display: flex;
+  justify-content: center;
+}
 
 /*----------MediaQueries / Desktop----------*/
 @media screen and (min-width: 1025px) {
   body {
-    background-image: url('img/Bg-rouge-new-deskstop.png');
+    background-image: url('img/Bg-marron-new-deskstop.png');
+    background-size: cover;
   }
   form {
     width: 40%;
