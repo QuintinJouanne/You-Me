@@ -1,13 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
-
 * {
   margin: 0;
 }
 
 body {
-  background-image: url('image/background.png');
-  background-size: 100%;
-  font-family: 'Fredoka', sans-serif;
+  background-image: url('img/Bg-all.png');
+  background-size: cover;
+  min-height: 100vh;
 }
 
 header h1 {
@@ -26,23 +24,35 @@ header h1 {
   top: 71px;
 }
 
+.homepageSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .description {
   display: flex;
   justify-content: center;
-  margin-top: 200px;
+  text-align: center;
+  align-items: center;
+  margin-top: 100px;
+  background: #27233a;
+  border-radius: 10px;
+  width: 80%;
+  padding: 15px 0px 20px 0px;
 }
 
 .description p {
   width: 75%;
-  font-weight: 700;
-  font-size: 18px;
+  font-weight: 400;
+  font-size: 20px;
   line-height: 22px;
-  color: #27233a;
-  text-align: justify;
+  color: #ffffff;
 }
 
 .buttonPosition {
   margin-top: 100px;
+  width: 100%;
 }
 
 .buttonPosition > a {
@@ -56,10 +66,14 @@ header h1 {
   width: 75%;
   height: 194px;
   background: #27233a;
-  box-shadow: 0px 2px 4px #000000;
   border-radius: 150px / 97px;
   border-color: #27233a;
   font-weight: 700;
   font-size: 38px;
   color: #ffffff;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
+}
+
+.buttonLetsgo:active {
+  box-shadow: inset 0px 6px 6px rgba(0, 0, 0, 0.5);
 }
