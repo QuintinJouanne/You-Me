@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>You&Me Compatibility</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="IDFriends.css" />
+  </head>
+  <body>
+    <nav class="navbar" role="navigation">
+      <div class="navbar__logo">
+        <h1>You&Me</h1>
+        <img class="cple" src="image/cple.png" alt="image-couple" />
+      </div>
+      <ul class="navbar__links">
+        <li class="navbar__link first">
+          <a href="index.html">Home</a>
+        </li>
+        <li class="navbar__link second">
+          <a href="themeChoice.html">Try new mode</a>
+        </li>
+        <li class="navbar__link third">
+          <a href="aboutUs.html">About us</a>
+        </li>
+        <li class="navbar__link four">
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+      <button class="burger">
+        <span class="bar"></span>
+      </button>
+    </nav>
+    <div class="displayNone">
+      <form action="question-friend.html">
+        <h1>S'identifier</h1>
+        <div class="inputs">
+          <label id="lastName" for="name">Nom</label>
+          <input
+            id="inputLastName"
+            type="text"
+            placeholder="Nom"
+            name="name"
+            required
+          />
+        </div>
+        <div class="inputs">
+          <label id="firstName" for="firstname">Prénom</label>
+          <input
+            id="inputFirstName"
+            type="text"
+            placeholder="Prenom"
+            name="firstname"
+            required
+          />
+        </div>
+        <div align="center">
+          <button id="button" type="submit">C'est parti !!</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="ID.js"></script>
+    <script src="menuBurger.js"></script>
+  </body>
+</html>

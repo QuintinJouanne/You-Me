@@ -11,6 +11,10 @@ const imageElements = [relPro, relAmi, relAmo];
 const suivant = document.querySelector('.arrowRight');
 const precedant = document.querySelector('.arrowLeft');
 
+const bgBody = document.querySelector('body');
+
+const titleCategories = document.querySelector('.choiceCategories');
+
 function slidesuivante() {
   const activeElement = document.querySelector('.isActive');
 
@@ -40,6 +44,15 @@ function slidesuivante() {
     relAmo.classList.remove('loveImgPos3');
     relPro.classList.remove('jobImgPos3');
     relAmi.classList.remove('friendshipImgPos3');
+
+    titleCategories.innerHTML = 'Relations Amoureuses';
+
+    document.body.style.backgroundImage = "url('img/Bg-rouge-new.png')";
+
+    if (window.matchMedia('(min-width: 600px)').matches) {
+      document.body.style.backgroundImage =
+        "url('img/Bg-rouge-new-deskstop.png')";
+    }
   }
 
   if (relPro.classList.contains('isActive')) {
@@ -54,6 +67,15 @@ function slidesuivante() {
     relAmo.classList.remove('loveImgPos3');
     relPro.classList.remove('jobImgPos3');
     relAmi.classList.remove('friendshipImgPos3');
+
+    titleCategories.innerHTML = 'Relations Professionnelles';
+
+    document.body.style.backgroundImage = "url('img/Bg-bleu-new.png')";
+
+    if (window.matchMedia('(min-width: 600px)').matches) {
+      document.body.style.backgroundImage =
+        "url('img/Bg-bleu-new-deskstop.png')";
+    }
   }
 
   if (relAmi.classList.contains('isActive')) {
@@ -68,11 +90,19 @@ function slidesuivante() {
     relAmo.classList.remove('loveImgPos2');
     relPro.classList.remove('jobImgPos2');
     relAmi.classList.remove('friendshipImgPos2');
+
+    titleCategories.innerHTML = 'Relations Amicales';
+
+    document.body.style.backgroundImage = "url('img/Bg-marron-new.png')";
+
+    if (window.matchMedia('(min-width: 600px)').matches) {
+      document.body.style.backgroundImage =
+        "url('img/Bg-marron-new-deskstop.png')";
+    }
   }
 }
 
 function removeOriginPos() {
-  const removeElement = document.querySelectorAll('.choice');
   relAmo.classList.remove('loveImgdebase');
   relPro.classList.remove('jobImgPosdebase');
   relAmi.classList.remove('friendImgPosdebase');
@@ -81,3 +111,21 @@ function removeOriginPos() {
 suivant.addEventListener('click', slidesuivante);
 suivant.addEventListener('click', removeOriginPos);
 precedant.addEventListener('click', slidesuivante);
+
+//
+
+const jobChoice = document.getElementById('jobChoice');
+const loveChoice = document.getElementById('loveChoice');
+const friendChoice = document.getElementById('friendChoice');
+jobChoice.addEventListener('click', () => {
+  localStorage.setItem('theme', 'job');
+  window.location.href = 'IdentificationWork.html';
+});
+loveChoice.addEventListener('click', () => {
+  localStorage.setItem('theme', 'love');
+  window.location.href = 'IdentifiicationLove.html';
+});
+friendChoice.addEventListener('click', () => {
+  localStorage.setItem('theme', 'friend');
+  window.location.href = 'IdentificationFriends.html';
+});
