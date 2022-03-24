@@ -116,18 +116,23 @@ suivant.addEventListener('click', removeOriginPos);
 const jobChoice = document.getElementById('jobChoice');
 const loveChoice = document.getElementById('loveChoice');
 const friendChoice = document.getElementById('friendChoice');
+
+function redirectToIdentification() {
+  window.location.href = 'Identification.html';
+  localStorage.setItem('currentPlayer', 'one');
+}
+
 jobChoice.addEventListener('click', () => {
-  localStorage.setItem('theme', 'job');
-  window.location.href = 'IdentificationWork.html';
+  localStorage.setItem('theme', 'work');
+  redirectToIdentification();
 });
 loveChoice.addEventListener('click', () => {
   localStorage.setItem('theme', 'love');
-  window.location.href = 'IdentifiicationLove.html';
-  console.log('hello world');
+  redirectToIdentification();
 });
 friendChoice.addEventListener('click', () => {
   localStorage.setItem('theme', 'friend');
-  window.location.href = 'IdentificationFriends.html';
+  redirectToIdentification();
 });
 
 // Gère le local storage

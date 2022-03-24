@@ -25,9 +25,19 @@ if (answersPlayerOne && answersPlayerTwo) {
   const progress = setInterval(() => {
     progressValue += 1;
     valueContainer.textContent = `${progressValue}%`;
+    let firstColor = '#E94F4F';
+    let secondColor = '#F3A0A0';
+
+    if (theme === 'work') {
+      // changer les deux couleurs
+    }
+    if (theme === 'friend') {
+      // changer les deux couleurs
+    }
+
     progressBar.style.background = `conic-gradient(
-    #E94F4F ${progressValue * 3.6}deg,
-    #F3A0A0 ${progressValue * 3.6}deg
+    ${firstColor} ${progressValue * 3.6}deg,
+    ${secondColor} ${progressValue * 3.6}deg
   )`;
     if (progressValue === progressEndValue) {
       clearInterval(progress);
@@ -114,7 +124,6 @@ if (answersPlayerOne && answersPlayerTwo) {
   }
 
   const resultObject = contentToDisplay[theme][compatLevel];
-  console.log(resultObject);
 
   const contentTitle = document.getElementById('titleAnswer');
   contentTitle.innerHTML = resultObject.title;
