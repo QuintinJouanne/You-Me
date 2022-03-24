@@ -310,5 +310,5 @@ const contentToDisplay = {
 const resultObject = contentToDisplay[theme];
 document.body.style.backgroundImage = `url(${resultObject.background})`;
 
-document.body..style.backgroundColor = `url(${resultObject.button})`;
+document.body.style.backgroundColor = `url(${resultObject.button})`;
 document.body.style.backgroundColor = `url(${resultObject.buttonsSelected})`;
