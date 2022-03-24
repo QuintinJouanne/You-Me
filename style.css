@@ -6,21 +6,23 @@
   --navbar-color: #ffffff;
 }
 
-/* Reset */
+/* CSS commun */
 * {
   box-sizing: border-box;
   outline: none;
   margin: 0;
   padding: 0;
 }
+
 ul {
   list-style: none;
 }
 
-/* Basic style */
 body {
   font-family: 'Fredoka', sans-serif;
-  margin: 0;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
 }
 
 .displayNone {
