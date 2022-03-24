@@ -72,11 +72,11 @@ body {
   align-items: center;
 }
 
-.buttonA {
+#bouton1 {
   background-color: var(--main-button-color-work);
   font-family: 'Fredoka', sans-serif;
   color: #ffffff;
-  font-size: large;
+  font-size: 20px;
   width: 70%;
   height: 150px;
   border-radius: 20px;
@@ -85,15 +85,15 @@ body {
   transition: 0.8s;
 }
 
-.buttonA:focus {
+#bouton1:focus {
   background-color: var(--button-color-selected-work);
 }
 
-.buttonB {
+#bouton2 {
   background-color: var(--main-button-color-work);
   font-family: 'Fredoka', sans-serif;
   color: #ffffff;
-  font-size: large;
+  font-size: 20px;
   width: 70%;
   height: 150px;
   border-radius: 20px;
@@ -102,7 +102,7 @@ body {
   transition: 0.8s;
 }
 
-.buttonB:focus {
+#bouton2:focus {
   background-color: var(--button-color-selected-work);
 }
 
@@ -136,267 +136,6 @@ body {
     height: 150px;
   }
   .buttonB {
-    width: 50%;
-    height: 150px;
-  }
-}
-
-/*CSS RULES FOR LOVE-QUESTION*/
-.body2 {
-  color: #ffffff;
-  background-image: var(--main-bg-color-love);
-  background-size: cover;
-  min-height: 100vh;
-}
-
-.progressBarContainer2 {
-  margin-top: 100px;
-  margin-left: 40px;
-  margin-right: 40px;
-  display: flex;
-  justify-content: center;
-  height: 25px;
-  background-color: var(--main-button-color-love);
-  border-radius: 10px;
-}
-
-.progress-bar2 {
-  height: 100%;
-  border-radius: 10px;
-  background-color: var(--button-color-selected-love);
-}
-
-#play-animation {
-  animation: progress-animation 5s forwards;
-}
-
-@keyframes progress-animation {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 100%;
-  }
-}
-
-.question-container2 {
-  width: 100%;
-  height: 200px;
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-  font-size: 17pt;
-  text-align: center;
-  font-weight: bold;
-}
-
-.question-container2 p {
-  width: 70%;
-}
-
-.boutonAB2 {
-  width: 100%;
-  height: 350px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.buttonA2 {
-  background-color: var(--main-button-color-love);
-  font-family: 'Fredoka', sans-serif;
-  color: #ffffff;
-  font-size: large;
-  width: 70%;
-  height: 150px;
-  border-radius: 20px;
-  cursor: pointer;
-  box-shadow: 13px 14px 24px 0px rgba(0, 0, 0, 0.35);
-  transition: 0.8s;
-}
-
-.buttonA2:focus {
-  background-color: var(--button-color-selected-love);
-}
-
-.buttonB2 {
-  background-color: var(--main-button-color-love);
-  font-family: 'Fredoka', sans-serif;
-  color: #ffffff;
-  font-size: large;
-  width: 70%;
-  height: 150px;
-  border-radius: 20px;
-  cursor: pointer;
-  box-shadow: 13px 14px 24px 0px rgba(0, 0, 0, 0.35);
-  transition: 0.8s;
-}
-
-.buttonB2:focus {
-  background-color: var(--button-color-selected-love);
-}
-
-.bouton-next2 {
-  display: flex;
-  width: 100%;
-  height: 100px;
-  justify-content: flex-end;
-  align-items: flex-end;
-  margin-top: 30px;
-}
-
-.next2 {
-  width: 50px;
-  height: 50px;
-  margin-right: 20px;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.next2:active {
-  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-@media screen and(min-width: 1025px) {
-  .body2 {
-    background-image: var(--main-bg-image-deskstop-love);
-  }
-  .buttonA2 {
-    width: 50%;
-    height: 150px;
-  }
-  .buttonB2 {
-    width: 50%;
-    height: 150px;
-  }
-}
-
-/*CSS RULES FOR FRIEND-QUESTION*/
-
-.body3 {
-  color: #ffffff;
-  background-image: var(--main-bg-color-friend);
-  background-size: cover;
-  min-height: 100vh;
-}
-
-.progressBarContainer3 {
-  margin-top: 100px;
-  margin-left: 40px;
-  margin-right: 40px;
-  display: flex;
-  justify-content: center;
-  height: 25px;
-  background-color: var(--main-button-color-friend);
-  border-radius: 10px;
-}
-
-.progress-bar3 {
-  height: 100%;
-  border-radius: 10px;
-  background-color: var(--button-color-selected-friend);
-}
-
-#play-animation {
-  animation: progress-animation 5s forwards;
-}
-
-@keyframes progress-animation {
-  0% {
-    width: 0%;
-  }
-  100% {
-    width: 100%;
-  }
-}
-
-.question-container3 {
-  width: 100%;
-  height: 200px;
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-  font-size: 17pt;
-  text-align: center;
-  font-weight: bold;
-}
-
-.question-container3 p {
-  width: 70%;
-}
-
-.boutonAB3 {
-  width: 100%;
-  height: 350px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.buttonA3 {
-  background-color: var(--main-button-color-friend);
-  font-family: 'Fredoka', sans-serif;
-  color: #ffffff;
-  width: 70%;
-  height: 150px;
-  border-radius: 20px;
-  cursor: pointer;
-  box-shadow: 13px 14px 24px 0px rgba(0, 0, 0, 0.35);
-  transition: 0.8s;
-}
-
-.buttonA3:focus {
-  background-color: var(--button-color-selected-friend);
-}
-
-.buttonB3 {
-  background-color: var(--main-button-color-friend);
-  font-family: 'Fredoka', sans-serif;
-  color: #ffffff;
-  width: 70%;
-  height: 150px;
-  border-radius: 20px;
-  cursor: pointer;
-  box-shadow: 13px 14px 24px 0px rgba(0, 0, 0, 0.35);
-  transition: 0.8s;
-}
-
-.buttonB3:focus {
-  background-color: var(--button-color-selected-friend);
-}
-
-.bouton-next3 {
-  display: flex;
-  width: 100%;
-  height: 100px;
-  justify-content: flex-end;
-  align-items: flex-end;
-  margin-top: 30px;
-}
-
-.next3 {
-  width: 50px;
-  height: 50px;
-  margin-right: 20px;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.next3:active {
-  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-@media screen and(min-width: 1025px) {
-  .body3 {
-    background-image: var(--main-bg-image-deskstop-friend);
-  }
-  .buttonA3 {
-    width: 50%;
-    height: 150px;
-  }
-  .buttonB3 {
     width: 50%;
     height: 150px;
   }
