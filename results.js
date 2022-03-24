@@ -25,14 +25,16 @@ if (answersPlayerOne && answersPlayerTwo) {
   const progress = setInterval(() => {
     progressValue += 1;
     valueContainer.textContent = `${progressValue}%`;
-    let firstColor = '#E94F4F';
-    let secondColor = '#F3A0A0';
+    let firstColor = '#E33950';
+    let secondColor = '#7B0909';
 
     if (theme === 'work') {
-      // changer les deux couleurs
+      firstColor = '#3980E3';
+      secondColor = '#09377B';
     }
     if (theme === 'friend') {
-      // changer les deux couleurs
+      firstColor = '#E38639';
+      secondColor = '#9D581F';
     }
 
     progressBar.style.background = `conic-gradient(
