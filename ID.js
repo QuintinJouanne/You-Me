@@ -3,6 +3,7 @@ const inputLastName = document.getElementById('inputLastName');
 const inputFirstName = document.getElementById('inputFirstName');
 const firstName = document.getElementById('firstName');
 const lastName = document.getElementById('lastName');
+const currentPlayer = localStorage.getItem('currentPlayer');
 
 function validation(event) {
   if (inputLastName.validity.valueMissing) {
@@ -20,5 +21,9 @@ function validation(event) {
   } else {
     firstName.textContent = null;
   }
+  localStorage.setItem(
+    currentPlayer === 'one' ? 'playerOneName' : 'playerTwoName',
+    inputFirstName.value
+  );
 }
 formValid.addEventListener('click', validation);
