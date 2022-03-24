@@ -40,9 +40,9 @@ body {
 /* slider container */
 .sliderContainer {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  width: 100%;
+  justify-content: space-between;
+  width: 80%;
   flex-direction: row;
   /* background-color: chocolate;*/
 }
@@ -208,10 +208,6 @@ body {
     display: flex;
   }
 
-  .choiceCategories {
-    font-size: 40px;
-  }
-
   .arrowLeft,
   .arrowRight {
     width: 50px;
@@ -233,7 +229,8 @@ body {
   .sliderContainer {
     display: flex;
     align-items: center;
-    width: 40%;
+    justify-content: space-between;
+    width: 27%;
     flex-direction: row;
   }
 
@@ -268,18 +265,20 @@ body {
     left: 30%;
     z-index: 1;
     transition: 2s;
+    pointer-events: none;
   }
 
   .loveImgPos3 {
     display: block;
     position: absolute;
     top: 30%;
-    height: 70%;
-    width: 25%;
+    height: 80%;
+    width: 15%;
     transform-style: preserve-3d;
-    right: 0;
+    right: 25%;
     z-index: 1;
     transition: 1s;
+    pointer-events: none;
   }
 
   /**/
@@ -317,10 +316,11 @@ body {
     top: 30%;
     height: 70%;
     width: 20%;
-    left: 0;
+    left: 25%;
     transform-style: preserve-3d;
     z-index: 1;
     transition: 1s;
+    pointer-events: none;
   }
 
   /**/
@@ -350,14 +350,15 @@ body {
     right: 25%;
     z-index: 1;
     transition: 1s;
+    pointer-events: none;
   }
 
   .friendshipImgPos3 {
     display: block;
     position: absolute;
-    top: 110%;
-    height: 140%;
-    width: 70%;
+    top: 80%;
+    height: 120%;
+    width: 30%;
     left: 50%;
     transform-style: preserve-3d;
     transform: translate(-50%, -50%);
