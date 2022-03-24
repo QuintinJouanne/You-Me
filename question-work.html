@@ -33,9 +33,11 @@
         <span class="bar"></span>
       </button>
     </nav>
+
     <div class="displayNone">
-    <div class="progress-bar">
-      <progress id="progressbar" value="30" max="100">30 %</progress>
+    
+    <div class="progressBarContainer">
+      <div id="uploadProgressBar" class="progress-bar"></div>
     </div>
 
     <div class="question-container">
@@ -44,19 +46,18 @@
 
     <div class="containerAB">
       <div class="boutonAB">
-        <button class="buttonA">S'assurer des débouchés, un emploi.</button>
-        <button class="buttonB">Réaliser tous ses rêves.</button>
+        <button id="bouton1" class="buttonA">S'assurer des débouchés, un emploi.</button>
+        <button id ="bouton2" class="buttonB">Réaliser tous ses rêves.</button>
       </div>
     </div>
 
     <div class="bouton-next">
-      <button class="next">
+      <button class="next" >
         <img  id="nextBtn" src="chevron-right.png" alt="chevron next" />
       </button>
     </div>
   </div>
     <script src="menuBurger.js"></script>
-    <script src="script-question"></script>
-    <script src="main.js"></script>
+    <script src="question.js"></script>
   </body>
 </html>
