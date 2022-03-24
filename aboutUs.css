@@ -46,7 +46,6 @@ body {
 
 .aboutUsParagraph {
   width: 75%;
-  text-align: justify;
   font-weight: 400;
   font-size: 20px;
   line-height: 25px;
@@ -76,7 +75,6 @@ body {
 
 .whyParagraph {
   width: 75%;
-  text-align: justify;
   font-weight: 400;
   font-size: 20px;
   line-height: 25px;

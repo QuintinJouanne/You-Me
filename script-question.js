@@ -1,20 +1,5 @@
 //PROGRESS BAR //
 
-const maxBar = 100;
-const currentBar = 0;
-const progressBar;
-const intervalId;
-
-const initialisation = function() {
-    progressBar = document.getElementById('progressbar');
-    progressBar.value = currentBar;
-    progressBar.max = maxBar
-}
-
-const progress = function() {
-    currentBar++;
-    progressBar.value = currentBar;
-}
 
 
 //ARRAY QUESTIONS WORK//
@@ -31,17 +16,24 @@ const questionsWork = [
     },
 },
 {
-  question: "Préfèrez-vous travailler seul ou en equipe ?",
+  question: "Préfèrez-vous :",
   answer: {
-        A: "oui",
-        B: "non",
+        A: "Travailler comme un acharné avec votre équipe",
+        B: "Boire des cafés avec votre équipe",
     },
 },
 {
-  question: "Vous aimez plutot travailler :",
+  question: "Vous aimez plutôt travailler :",
   answer: {
         A: "Seul(e)",
         B: "En équipe",
+    },
+},
+{
+    question: "De quel emploi-avez toujours rêvé :",
+    answer: {
+        A: "Medecin",
+        B: "Pilote de F1",
     },
 },
 {
@@ -52,17 +44,10 @@ answer: {
     },
 },
 {
-    question: "De quel emploi-avez toujours rêvé :",
+    question: "Vous préférez travailler au sein :",
     answer: {
-        A: "Medecin",
-        B: "Pilote de F1",
-    },
-},
-{
-    question: "De quel emploi-avez toujours rêvé :",
-    answer: {
-        A: "Medecin",
-        B: "Pilote de F1",
+        A: "D'une start-up, 10 salariés",
+        B: "D'une mega structure, 500 salariés",
     },
 },
 {
@@ -86,6 +71,13 @@ answer: {
         B: "Introverti"
     },
 },
+{
+    question: "Si vous aviez la possibilité:",
+    answer: {
+        A: "Je travaille en chaussettes",
+        B: "Je travaille en costume",
+    }
+}
 ];
 
 
@@ -152,7 +144,7 @@ const quesionLove = [
     },
 },
 {
-    question: "Pour  prendre une décision importante vous concernant :",
+    question: "Pour prendre une décision importante vous concernant :",
     answer: {
         A: "Je n’écoute que moi.",
         B: "Je compte sur ma moitié pour me diriger dans la bonne direction.",
@@ -243,7 +235,7 @@ question: " L’affirmation qui me correspond le mieux…",
     },
 },
 {
-    question: "Vous etes accoudé au bar...",
+    question: "Vous êtes accoudé au bar...",
     answer: {
         A: "Je sais quoi lui commander",
         B: "On va attendre qu'il/elle revienne des sanitaires",
@@ -251,7 +243,7 @@ question: " L’affirmation qui me correspond le mieux…",
 
 },
 {
-    question: "Lorsque tu arrive chez elle/lui...",
+    question: "Lorsque tu arrives chez elle/lui...",
     answer: {
     A: "Tu te sers dans le frigo",
     B: "Tu demandes poliement",
