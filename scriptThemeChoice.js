@@ -47,7 +47,12 @@ function slidesuivante() {
 
     titleCategories.innerHTML = 'Relations Amoureuses';
 
-    document.body.style.backgroundImage = "url('img/Bg-rouge.png')";
+    document.body.style.backgroundImage = "url('img/Bg-rouge-new.png')";
+
+    if (window.matchMedia('(min-width: 600px)').matches) {
+      document.body.style.backgroundImage =
+        "url('img/Bg-rouge-new-deskstop.png')";
+    }
   }
 
   if (relPro.classList.contains('isActive')) {
@@ -65,7 +70,12 @@ function slidesuivante() {
 
     titleCategories.innerHTML = 'Relations Professionnelles';
 
-    document.body.style.backgroundImage = "url('img/Bg-marron.png')";
+    document.body.style.backgroundImage = "url('img/Bg-bleu-new.png')";
+
+    if (window.matchMedia('(min-width: 600px)').matches) {
+      document.body.style.backgroundImage =
+        "url('img/Bg-bleu-new-deskstop.png')";
+    }
   }
 
   if (relAmi.classList.contains('isActive')) {
@@ -83,12 +93,16 @@ function slidesuivante() {
 
     titleCategories.innerHTML = 'Relations Amicales';
 
-    document.body.style.backgroundImage = "url('img/Bg-bleu.png')";
+    document.body.style.backgroundImage = "url('img/Bg-marron-new.png')";
+
+    if (window.matchMedia('(min-width: 600px)').matches) {
+      document.body.style.backgroundImage =
+        "url('img/Bg-marron-new-deskstop.png')";
+    }
   }
 }
 
 function removeOriginPos() {
-  const removeElement = document.querySelectorAll('.choice');
   relAmo.classList.remove('loveImgdebase');
   relPro.classList.remove('jobImgPosdebase');
   relAmi.classList.remove('friendImgPosdebase');
@@ -97,3 +111,21 @@ function removeOriginPos() {
 suivant.addEventListener('click', slidesuivante);
 suivant.addEventListener('click', removeOriginPos);
 precedant.addEventListener('click', slidesuivante);
+
+//
+
+const jobChoice = document.getElementById('jobChoice');
+const loveChoice = document.getElementById('loveChoice');
+const friendChoice = document.getElementById('friendChoice');
+jobChoice.addEventListener('click', () => {
+  localStorage.setItem('theme', 'job');
+  window.location.href = 'IdentificationWork.html';
+});
+loveChoice.addEventListener('click', () => {
+  localStorage.setItem('theme', 'love');
+  window.location.href = 'IdentifiicationLove.html';
+});
+friendChoice.addEventListener('click', () => {
+  localStorage.setItem('theme', 'friend');
+  window.location.href = 'IdentificationFriends.html';
+});

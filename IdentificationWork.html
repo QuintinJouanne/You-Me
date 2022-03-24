@@ -2,11 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>You&Me Compatibility</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="homepage.css" />
+    <link rel="stylesheet" href="IDWork.css" />
   </head>
   <body>
     <nav class="navbar" role="navigation">
@@ -34,22 +33,34 @@
     </nav>
 
     <div class="displayNone">
-      <section class="homepageSection">
-        <div class="description">
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. A iusto
-            dolorum similique iste asperiores veniam nostrum sapiente ullam
-            nobis recusandae, rerum, corrupti minus, harum alias aspernatur
-            beatae ipsa voluptates sunt.
-          </p>
+      <form action="question-work.html">
+        <h1>S'identifier</h1>
+        <div class="inputs">
+          <label id="lastName" for="name">Nom</label>
+          <input
+            id="inputLastName"
+            type="text"
+            placeholder="Nom"
+            name="name"
+            required
+          />
         </div>
-        <div class="buttonPosition">
-          <a href="themeChoice.html">
-            <input class="buttonLetsgo" type="button" value="Let's go !" />
-          </a>
+        <div class="inputs">
+          <label id="firstName" for="firstname">Prénom</label>
+          <input
+            id="inputFirstName"
+            type="text"
+            placeholder="Prenom"
+            name="firstname"
+            required
+          />
         </div>
-      </section>
+        <div align="center">
+          <button id="button" type="submit">C'est parti !!</button>
+        </div>
+      </form>
     </div>
     <script src="menuBurger.js"></script>
+    <script src="ID.js"></script>
   </body>
 </html>

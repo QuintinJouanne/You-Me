@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
 
 * {
   margin: 0;
@@ -7,11 +8,10 @@
 
 body {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
   min-height: 100vh;
-  font-family: 'Kumbh Sans', sans-serif;
-  background-image: url(img/Bg-rouge.png);
+  font-family: 'Fredoka', sans-serif;
+  background-image: url(img/Bg-rouge-new.png);
   background-size: cover;
 }
 
@@ -56,6 +56,7 @@ body {
   height: 50px;
   background: #27233a;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .arrowImg {
@@ -73,14 +74,18 @@ body {
 
 /* Position 1 */
 
+.card {
+  cursor: pointer;
+}
+
 .loveImgPos1,
 .loveImgdebase {
   display: block;
   position: absolute;
-  top: 60%;
-  height: 120%;
-  width: 60%;
-  left: 50%;
+  top: 70%;
+  height: 130%;
+  width: 100%;
+  left: 55%;
   transform-style: preserve-3d;
   transform: translate(-50%, -50%);
   z-index: 2;
@@ -108,7 +113,7 @@ body {
   transform-style: preserve-3d;
   right: 0;
   z-index: 1;
-  transition: 3s;
+  transition: 1s;
 }
 
 /**/
@@ -130,8 +135,8 @@ body {
   display: block;
   position: absolute;
   top: 70%;
-  height: 80%;
-  width: 90%;
+  height: 100%;
+  width: 110%;
   left: 50%;
   transform-style: preserve-3d;
   transform: translate(-50%, -50%);
@@ -148,7 +153,7 @@ body {
   left: 0;
   transform-style: preserve-3d;
   z-index: 1;
-  transition: 3s;
+  transition: 1s;
 }
 
 /**/
@@ -159,7 +164,7 @@ body {
   position: absolute;
   top: 30%;
   height: 45%;
-  width: 35%;
+  width: 45%;
   transform-style: preserve-3d;
   left: 0;
   z-index: 1;
@@ -176,20 +181,20 @@ body {
   transform-style: preserve-3d;
   right: 0;
   z-index: 1;
-  transition: 2s;
+  transition: 1s;
 }
 
 .friendshipImgPos3 {
   display: block;
   position: absolute;
-  top: 60%;
+  top: 80%;
   height: 90%;
   width: 80%;
   left: 50%;
   transform-style: preserve-3d;
   transform: translate(-50%, -50%);
   z-index: 2;
-  transition: 3s;
+  transition: 1s;
 }
 
 .isActive {
@@ -198,7 +203,172 @@ body {
 /* Médiaqueries */
 @media screen and (min-width: 540px) {
   body {
-    background-image: url(img/Bg_desktop.png);
+    background-image: url(img/Bg-rouge-new-deskstop.png);
     background-size: cover;
+    display: flex;
   }
+
+  .choiceCategories {
+    font-size: 40px;
+  }
+
+  .arrowLeft,
+  .arrowRight {
+    width: 50px;
+    height: 50px;
+    background: #27233a;
+    border-radius: 50%;
+  }
+
+  .txtContainer {
+    font-size: 30px;
+  }
+
+  .mainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sliderContainer {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    flex-direction: row;
+  }
+
+  .choiceCategories {
+    font-size: 25px;
+  }
+
+  /*PARTIE CHANGEMENT PERSO*/
+  /* Position 1 */
+
+  .loveImgPos1,
+  .loveImgdebase {
+    display: block;
+    position: absolute;
+    top: 90%;
+    height: 150%;
+    width: 25%;
+    left: 50%;
+    transform-style: preserve-3d;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    transition: 1s;
+  }
+
+  .loveImgPos2 {
+    display: block;
+    position: absolute;
+    top: 30%;
+    height: 80%;
+    width: 15%;
+    transform-style: preserve-3d;
+    left: 30%;
+    z-index: 1;
+    transition: 2s;
+  }
+
+  .loveImgPos3 {
+    display: block;
+    position: absolute;
+    top: 30%;
+    height: 70%;
+    width: 25%;
+    transform-style: preserve-3d;
+    right: 0;
+    z-index: 1;
+    transition: 1s;
+  }
+
+  /**/
+
+  .jobImgPos1,
+  .jobImgPosdebase {
+    display: block;
+    position: absolute;
+    top: 30%;
+    height: 60%;
+    width: 20%;
+    right: 20%;
+    transform-style: preserve-3d;
+    z-index: 1;
+    transition: 1s;
+    pointer-events: none;
+  }
+
+  .jobImgPos2 {
+    display: block;
+    position: absolute;
+    top: 100%;
+    height: 100%;
+    width: 30%;
+    left: 50%;
+    transform-style: preserve-3d;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    transition: 2s;
+  }
+
+  .jobImgPos3 {
+    display: block;
+    position: absolute;
+    top: 30%;
+    height: 70%;
+    width: 20%;
+    left: 0;
+    transform-style: preserve-3d;
+    z-index: 1;
+    transition: 1s;
+  }
+
+  /**/
+
+  .friendshipImgPos1,
+  .friendImgPosdebase {
+    display: block;
+    position: absolute;
+    top: 35%;
+    height: 65%;
+    width: 15%;
+    transform-style: preserve-3d;
+    left: 20%;
+    z-index: 1;
+    transition: 1s;
+    pointer-events: none;
+  }
+
+  .friendshipImgPos2 {
+    display: block;
+    position: absolute;
+    top: 40%;
+    top: 30%;
+    height: 75%;
+    width: 15%;
+    transform-style: preserve-3d;
+    right: 25%;
+    z-index: 1;
+    transition: 1s;
+  }
+
+  .friendshipImgPos3 {
+    display: block;
+    position: absolute;
+    top: 110%;
+    height: 140%;
+    width: 70%;
+    left: 50%;
+    transform-style: preserve-3d;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    transition: 1s;
+  }
+}
+
+.themeChoiceSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
