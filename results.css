@@ -1,5 +1,5 @@
 body {
-  background-color: #c6ddff;
+  background-color: #f6dddd;
   font-family: 'Kumbh Sans', sans-serif;
 }
 
@@ -7,7 +7,7 @@ body {
   display: grid;
 
   height: 150px;
-  margin-top: 150px;
+  margin-top: 100px;
   justify-content: center;
 }
 
@@ -24,7 +24,7 @@ body {
 
 .container2 {
   text-align: center;
-  background-color: #96c0ff;
+  background-color: #f6e0e0;
   border-radius: 20px;
   margin-top: 25px;
 }
@@ -44,10 +44,6 @@ body {
   color: #231c3d;
 }
 
-.paragraphe {
-  text-align: center;
-}
-
 .gifparent {
   display: flex;
   justify-content: center;
@@ -65,6 +61,7 @@ h2 {
 }
 
 .btnsection {
+  margin-top: 50px;
   display: flex;
   justify-content: space-around;
 }
@@ -81,13 +78,13 @@ h2 {
   width: 195px;
 }
 
-.lovebtn {
+.workbtn {
   height: 95px;
   width: 95px;
   transition: 1s;
 }
 
-.lovebtn:hover {
+.workbtn:hover {
   cursor: pointer;
   height: 195px;
   width: 195px;
