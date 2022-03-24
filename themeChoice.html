@@ -4,13 +4,39 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="styleThemeChoice.css" />
     <title>Carroussel</title>
   </head>
   <body>
-    <div class="mainContainer">
+
+    <nav class="navbar" role="navigation">
+      <div class="navbar__logo">
+        <h1>You&Me</h1>
+        <img class="cple" src="image/cple.png" alt="image-couple" />
+      </div>
+      <ul class="navbar__links">
+        <li class="navbar__link first">
+          <a href="index.html">Home</a>
+        </li>
+        <li class="navbar__link second">
+          <a href="themeChoice.html">Try new mode</a>
+        </li>
+        <li class="navbar__link third">
+          <a href="aboutUs.html">About us</a>
+        </li>
+        <li class="navbar__link four">
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+      <button class="burger">
+        <span class="bar"></span>
+      </button>
+    </nav>
+
+    <div class="mainContainer displayNone">
       <p class="txtContainer">
-        Intéressé par vos relations amicales ? Professionnelles ? Amoureuses ?
+        Intéressé par vos relations amicales ? <br> Professionnelles ? Amoureuses ?
       </p>
       <div class="sliderContainer">
         <div class="arrowLeft">
@@ -56,7 +82,7 @@
           alt="Grapefruit slice atop a pile of other slices"
         /></div>
     </div>
-    <script src="main.js"></script>
     <script src="scriptThemeChoice.js"></script>
+    <script src="menuBurger.js"></script>
   </body>
 </html>
