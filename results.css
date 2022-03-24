@@ -1,5 +1,4 @@
 body {
-  background-color: #fde5b6;
   font-family: 'Kumbh Sans', sans-serif;
 }
 
@@ -7,7 +6,7 @@ body {
   display: grid;
 
   height: 150px;
-  margin-top: 150px;
+  margin-top: 100px;
   justify-content: center;
 }
 
@@ -24,7 +23,7 @@ body {
 
 .container2 {
   text-align: center;
-  background-color: #dfb462;
+  background-color: #f6e0e0;
   border-radius: 20px;
   margin-top: 25px;
 }
@@ -41,6 +40,7 @@ body {
 .value-container {
   position: relative;
   font-size: 50px;
+  color: #231c3d;
 }
 
 .gifparent {
@@ -60,17 +60,18 @@ h2 {
 }
 
 .btnsection {
+  margin-top: 50px;
   display: flex;
   justify-content: space-around;
 }
 
-.lovebtn {
+.frienbtn {
   height: 95px;
   width: 95px;
   transition: 1s;
 }
 
-.lovebtn:hover {
+.frienbtn:hover {
   cursor: pointer;
   height: 195px;
   width: 195px;
