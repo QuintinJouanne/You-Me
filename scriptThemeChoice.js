@@ -15,6 +15,8 @@ const bgBody = document.querySelector('body');
 
 const titleCategories = document.querySelector('.choiceCategories');
 
+const tips = document.querySelector('.tips');
+
 function slidesuivante() {
   const activeElement = document.querySelector('.isActive');
 

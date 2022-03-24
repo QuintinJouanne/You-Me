@@ -42,7 +42,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 80%;
+  width: 90%;
   flex-direction: row;
   /* background-color: chocolate;*/
 }
@@ -70,6 +70,10 @@ body {
   height: 250px;
   width: 100%;
   top: -50px;
+}
+
+.choiceCategories {
+  font-size: 20px;
 }
 
 /* Position 1 */
@@ -197,11 +201,21 @@ body {
   transition: 1s;
 }
 
+.tips {
+  margin-top: 30px;
+  width: 70%;
+  display: flex;
+  text-align: center;
+  font-weight: 600;
+  color: white;
+  font-size: 20px;
+}
+
 .isActive {
 }
 
 /* Médiaqueries */
-@media screen and (min-width: 540px) {
+@media screen and (min-width: 1025px) {
   body {
     background-image: url(img/Bg-rouge-new-deskstop.png);
     background-size: cover;
@@ -238,6 +252,9 @@ body {
     font-size: 25px;
   }
 
+  .tips {
+    display: none;
+  }
   /*PARTIE CHANGEMENT PERSO*/
   /* Position 1 */
 
@@ -253,6 +270,15 @@ body {
     transform: translate(-50%, -50%);
     z-index: 2;
     transition: 1s;
+    animation: infinite;
+  }
+
+  .loveImgPos1,
+  .loveImgdebase:hover {
+    animation: infinite;
+    top: 110%;
+    height: 220%;
+    width: 40%;
   }
 
   .loveImgPos2 {
@@ -262,7 +288,7 @@ body {
     height: 80%;
     width: 15%;
     transform-style: preserve-3d;
-    left: 30%;
+    left: 25%;
     z-index: 1;
     transition: 2s;
     pointer-events: none;
@@ -271,8 +297,8 @@ body {
   .loveImgPos3 {
     display: block;
     position: absolute;
-    top: 30%;
-    height: 80%;
+    top: 10%;
+    height: 100%;
     width: 15%;
     transform-style: preserve-3d;
     right: 25%;
@@ -310,6 +336,12 @@ body {
     transition: 2s;
   }
 
+  .jobImgPos2:hover {
+    top: 110%;
+    height: 110%;
+    width: 40%;
+    transition: 1s;
+  }
   .jobImgPos3 {
     display: block;
     position: absolute;
@@ -347,7 +379,7 @@ body {
     height: 75%;
     width: 15%;
     transform-style: preserve-3d;
-    right: 25%;
+    right: 22%;
     z-index: 1;
     transition: 1s;
     pointer-events: none;
@@ -357,19 +389,18 @@ body {
     display: block;
     position: absolute;
     top: 80%;
-    height: 120%;
-    width: 30%;
+    height: 110%;
+    width: 20%;
     left: 50%;
     transform-style: preserve-3d;
     transform: translate(-50%, -50%);
     z-index: 2;
     transition: 1s;
   }
-}
 
-.themeChoiceSection {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  .friendshipImgPos3:hover {
+    top: 90%;
+    height: 120%;
+    width: 25%;
+  }
 }
