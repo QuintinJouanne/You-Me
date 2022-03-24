@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="question.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="img/cple.png" />
     <title>You & Me</title>
   </head>
   <body class="body3">
@@ -32,34 +33,33 @@
         <span class="bar"></span>
       </button>
     </nav>
-    
+
     <div class="displayNone">
-    <section>
-      <div class="progress-bar3">
-        <progress id="progressbar3" max="100" value="50">50%</progress>
+      <div class="progressBarContainer3">
+        <div class="progress-bar3"></div>
       </div>
-    </section>
 
-    <section>
-      <div class="question-container3">
-        <p id="questionText">L’affirmation qui me correspond le mieux…</p>
+      <section>
+        <div class="question-container3">
+          <p id="questionText">L’affirmation qui me correspond le mieux…</p>
+        </div>
+      </section>
+
+      <div class="containerAB3">
+        <div class="boutonAB3">
+          <button class="buttonA3">Je sais écouter.</button>
+          <button class="buttonB3">Je sais me faire entendre.</button>
+        </div>
       </div>
-    </section>
 
-    <div class="containerAB3">
-      <div class="boutonAB3">
-        <button class="buttonA3">Je sais écouter.</button>
-        <button class="buttonB3">Je sais me faire entendre.</button>
+      <div class="bouton-next3">
+        <button class="next3">
+          <img id="nextBtn" src="chevron-right.png" alt="chevron next" />
+        </button>
       </div>
-    </div>
-
-    <div class="bouton-next3">
-      <button class="next3">
-        <img id="nextBtn" src="chevron-right.png" alt="chevron next" />
-      </button>
-    </div>
     </div>
     <script src="menuBurger.js"></script>
+    <script src="question.js"></script>
 
     <script src="questions.js"></script>
   </body>
