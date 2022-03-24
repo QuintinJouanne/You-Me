@@ -2,6 +2,9 @@
   --main-bg-color-work: url('img/Bg-bleu-new.png');
   --main-bg-color-love: url('img/Bg-rouge-new.png');
   --main-bg-color-friend: url('img/Bg-marron-new.png');
+  --main-bg-image-deskstop-work: url('img/Bg-bleu-new-deskstop.png');
+  --main-bg-image-deskstop-love: url('img/Bg-rouge-new-deskstop.png');
+  --main-bg-image-deskstop-friend: url('img/Bg-marron-new-deskstop.png');
   --main-button-color-work: #3980e3;
   --main-button-color-love: #e33950;
   --main-button-color-friend: #e38639;
@@ -124,6 +127,20 @@ body {
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+@media screen and(min-width: 1025px) {
+  body {
+    background-image: var(--main-bg-image-deskstop-work);
+  }
+  .buttonA {
+    width: 50%;
+    height: 150px;
+  }
+  .buttonB {
+    width: 50%;
+    height: 150px;
+  }
+}
+
 /*CSS RULES FOR LOVE-QUESTION*/
 .body2 {
   color: #ffffff;
@@ -241,6 +258,20 @@ body {
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+@media screen and(min-width: 1025px) {
+  .body2 {
+    background-image: var(--main-bg-image-deskstop-love);
+  }
+  .buttonA2 {
+    width: 50%;
+    height: 150px;
+  }
+  .buttonB2 {
+    width: 50%;
+    height: 150px;
+  }
+}
+
 /*CSS RULES FOR FRIEND-QUESTION*/
 
 .body3 {
@@ -355,4 +386,18 @@ body {
 
 .next3:active {
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and(min-width: 1025px) {
+  .body3 {
+    background-image: var(--main-bg-image-deskstop-friend);
+  }
+  .buttonA3 {
+    width: 50%;
+    height: 150px;
+  }
+  .buttonB3 {
+    width: 50%;
+    height: 150px;
+  }
 }
