@@ -9,11 +9,15 @@ function validation(event) {
     event.preventDefault();
     lastName.textContent = 'Merci de bien vouloir renseigner votre nom';
     lastName.style.color = 'red';
+  } else {
+    lastName.textContent = null;
   }
   if (inputFirstName.validity.valueMissing) {
     event.preventDefault();
     firstName.textContent = 'Merci de bien vouloir renseigner votre prénom';
     firstName.style.color = 'red';
+  } else {
+    firstName.textContent = null;
   }
 }
 formValid.addEventListener('click', validation);
