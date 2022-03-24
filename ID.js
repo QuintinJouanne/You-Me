@@ -7,14 +7,15 @@ const lastName = document.getElementById('lastName');
 function validation(event) {
   if (inputLastName.validity.valueMissing) {
     event.preventDefault();
-    lastName.textContent = 'Merci de bien vouloir renseigner votre nom';
+    lastName.textContent = 'Merci de bien vouloir renseigner votre "Nom" !!';
     lastName.style.color = 'red';
   } else {
     lastName.textContent = null;
   }
   if (inputFirstName.validity.valueMissing) {
     event.preventDefault();
-    firstName.textContent = 'Merci de bien vouloir renseigner votre prénom';
+    firstName.textContent =
+      'Merci de bien vouloir renseigner votre "Prénom" !!';
     firstName.style.color = 'red';
   } else {
     firstName.textContent = null;
