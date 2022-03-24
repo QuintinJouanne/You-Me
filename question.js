@@ -1,5 +1,3 @@
-const themes = localStorage.getItem('theme');
-
 // PROGRESS BAR //
 
 const progressBar = document.querySelector('.progress-bar');
@@ -291,7 +289,26 @@ nextBtnElement.addEventListener('click', () => {
   }
 });
 
+const contentToDisplay = {
+  work: {
+    background: '/img/Bg-bleu-new.png',
+    button: '#3980e3',
+    buttonsSelected: '#09377b',
+  },
+  love: {
+    background: '/img/Bg-rouge-new.png',
+    button: '#e33950',
+    buttonsSelected: '#7b0909',
+  },
+  friend: {
+    background: '/img/Bg-marron-new.png',
+    button: '#e38639',
+    buttonsSelected: '#9d581f',
+  },
+};
 
-
-const resultObject
+const resultObject = contentToDisplay[theme];
 document.body.style.backgroundImage = `url(${resultObject.background})`;
+
+document.body..style.backgroundColor = `url(${resultObject.button})`;
+document.body.style.backgroundColor = `url(${resultObject.buttonsSelected})`;
