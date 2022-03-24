@@ -1,14 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
 :root {
   --main-bg-color-work: url('img/Bg-bleu-new.png');
-  --main-bg-color-love: url("img/Bg-rouge-new.png");
+  --main-bg-color-love: url('img/Bg-rouge-new.png');
   --main-bg-color-friend: url('img/Bg-marron-new.png');
-  --main-button-color-work: #3980E3;
-  --main-button-color-love: #E33950;
-  --main-button-color-friend: #E38639;
-  --button-color-selected-work: #09377B;
-  --button-color-selected-love: #7B0909;
-  --button-color-selected-friend: #9D581F;
+  --main-bg-image-deskstop-work: url('img/Bg-bleu-new-deskstop.png');
+  --main-bg-image-deskstop-love: url('img/Bg-rouge-new-deskstop.png');
+  --main-bg-image-deskstop-friend: url('img/Bg-marron-new-deskstop.png');
+  --main-button-color-work: #3980e3;
+  --main-button-color-love: #e33950;
+  --main-button-color-friend: #e38639;
+  --button-color-selected-work: #09377b;
+  --button-color-selected-love: #7b0909;
+  --button-color-selected-friend: #9d581f;
 }
 /* CSS RULES FOR WORK-QUESTIONS*/
 
@@ -20,7 +23,6 @@ body {
   min-height: 100vh;
 }
 
-
 .progressBarContainer {
   margin-top: 100px;
   margin-left: 40px;
@@ -30,7 +32,6 @@ body {
   height: 25px;
   background-color: var(--main-button-color-work);
   border-radius: 10px;
-  
 }
 
 .progress-bar {
@@ -38,14 +39,16 @@ body {
   border-radius: 10px;
   background-color: var(--button-color-selected-work);
   animation: progress-animation 5s;
-
 }
 
 @keyframes progress-animation {
-  0% {width: 0%;}
-  100% {width: 100%;}
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
 }
-
 
 .question-container {
   width: 100%;
@@ -63,7 +66,6 @@ body {
 }
 
 .boutonAB {
-  
   width: 100%;
   height: 350px;
   display: flex;
@@ -127,6 +129,20 @@ body {
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+@media screen and(min-width: 1025px) {
+  body {
+    background-image: var(--main-bg-image-deskstop-work);
+  }
+  .buttonA {
+    width: 50%;
+    height: 150px;
+  }
+  .buttonB {
+    width: 50%;
+    height: 150px;
+  }
+}
+
 /*CSS RULES FOR LOVE-QUESTION*/
 .body2 {
   font-family: 'Kumbh Sans', sans-serif;
@@ -145,7 +161,6 @@ body {
   height: 25px;
   background-color: var(--main-button-color-love);
   border-radius: 10px;
-  
 }
 
 .progress-bar2 {
@@ -159,10 +174,13 @@ body {
 }
 
 @keyframes progress-animation {
-  0% {width: 0%;}
-  100% {width: 100%;}
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
 }
-
 
 .question-container2 {
   width: 100%;
@@ -243,6 +261,20 @@ body {
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+@media screen and(min-width: 1025px) {
+  .body2 {
+    background-image: var(--main-bg-image-deskstop-love);
+  }
+  .buttonA2 {
+    width: 50%;
+    height: 150px;
+  }
+  .buttonB2 {
+    width: 50%;
+    height: 150px;
+  }
+}
+
 /*CSS RULES FOR FRIEND-QUESTION*/
 
 .body3 {
@@ -262,7 +294,6 @@ body {
   height: 25px;
   background-color: var(--main-button-color-friend);
   border-radius: 10px;
-  
 }
 
 .progress-bar3 {
@@ -276,10 +307,13 @@ body {
 }
 
 @keyframes progress-animation {
-  0% {width: 0%;}
-  100% {width: 100%;}
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
 }
-
 
 .question-container3 {
   width: 100%;
@@ -356,4 +390,18 @@ body {
 
 .next3:active {
   box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and(min-width: 1025px) {
+  .body3 {
+    background-image: var(--main-bg-image-deskstop-friend);
+  }
+  .buttonA3 {
+    width: 50%;
+    height: 150px;
+  }
+  .buttonB3 {
+    width: 50%;
+    height: 150px;
+  }
 }
