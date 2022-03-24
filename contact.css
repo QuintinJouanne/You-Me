@@ -1,22 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
-
-* {
-  margin: 0;
+:root {
+  --font-color: #ffffff;
+  --background-color: #27233a;
 }
 
 body {
-  font-family: 'Fredoka', sans-serif;
   background-image: url('img/Bg-all.png');
-  background-size: cover;
-  min-height: 100vh;
 }
 
 .contact {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 200px;
-  color: #27233a;
+  margin-top: 40px;
+  color: var(--font-color);
 }
 
 .contactTitle {
@@ -29,7 +25,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 30px;
+  margin-top: 70px;
   width: 100%;
   font-weight: 600;
   font-size: 20px;
@@ -37,26 +33,43 @@ body {
 }
 
 .contactInput {
+  font-family: 'Fredoka', sans-serif;
   width: 65%;
-  background-color: #f3a0a0;
+  background-color: var(--background-color);
   padding: 5px;
   margin: 15px;
   border-radius: 10px;
+  color: var(--font-color);
 }
 
 .buttonEnvoyer {
   margin-top: 30px;
-  background-color: #f5bfbf;
+  background-color: var(--background-color);
   width: 40%;
   height: 50px;
   border-radius: 10px;
   font-weight: 600;
   font-size: 20px;
   line-height: 25px;
-  color: #27233a;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  color: var(--font-color);
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
 }
 
 .buttonEnvoyer:active {
-  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0px 6px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Desktop version */
+@media screen and (min-width: 1025px) {
+  body {
+    background-image: url('img/Bg-all-deskstop.png');
+  }
+
+  .contactInput {
+    width: 30%;
+  }
+
+  .buttonEnvoyer {
+    width: 10%;
+  }
 }
