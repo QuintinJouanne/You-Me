@@ -82,3 +82,28 @@ body {
   line-height: 25px;
   overflow: scroll;
 }
+
+@media screen and (min-width: 1025px) {
+  body {
+    background-image: url('img/Bg-all-deskstop.png');
+  }
+  .aboutUs {
+    width: 85%;
+    padding: 20px 0px 20px 0px;
+    height: initial;
+  }
+  .aboutUsParagraph {
+    width: 85%;
+    overflow: initial;
+  }
+  .why {
+    width: 85%;
+    padding: 20px 0px 20px 0px;
+    height: initial;
+    margin-top: 50px;
+  }
+  .whyParagraph {
+    width: 85%;
+    overflow: initial;
+  }
+}
