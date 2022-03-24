@@ -42,6 +42,7 @@ const questionsWork = [
         A: "En entreprise.",
         B: "En remote.",
     },
+},
 ];
 
 
