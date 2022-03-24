@@ -8,8 +8,7 @@
 
 body {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
   min-height: 100vh;
   font-family: 'Fredoka', sans-serif;
   background-image: url(img/Bg-rouge-new.png);
@@ -83,10 +82,10 @@ body {
 .loveImgdebase {
   display: block;
   position: absolute;
-  top: 60%;
-  height: 120%;
+  top: 70%;
+  height: 130%;
   width: 100%;
-  left: 50%;
+  left: 55%;
   transform-style: preserve-3d;
   transform: translate(-50%, -50%);
   z-index: 2;
@@ -188,7 +187,7 @@ body {
 .friendshipImgPos3 {
   display: block;
   position: absolute;
-  top: 60%;
+  top: 80%;
   height: 90%;
   width: 80%;
   left: 50%;
@@ -206,23 +205,40 @@ body {
   body {
     background-image: url(img/Bg-rouge-new-deskstop.png);
     background-size: cover;
+    display: flex;
   }
 
   .choiceCategories {
     font-size: 40px;
-    margin: 0px 20px 0px 20px;
   }
 
   .arrowLeft,
   .arrowRight {
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
     background: #27233a;
     border-radius: 50%;
   }
 
   .txtContainer {
-    font-size: 40px;
+    font-size: 30px;
+  }
+
+  .mainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sliderContainer {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    flex-direction: row;
+  }
+
+  .choiceCategories {
+    font-size: 25px;
   }
 
   /*PARTIE CHANGEMENT PERSO*/
@@ -232,9 +248,9 @@ body {
   .loveImgdebase {
     display: block;
     position: absolute;
-    top: 100%;
+    top: 90%;
     height: 150%;
-    width: 50%;
+    width: 25%;
     left: 50%;
     transform-style: preserve-3d;
     transform: translate(-50%, -50%);
@@ -246,10 +262,10 @@ body {
     display: block;
     position: absolute;
     top: 30%;
-    height: 70%;
-    width: 25%;
+    height: 80%;
+    width: 15%;
     transform-style: preserve-3d;
-    left: 0;
+    left: 30%;
     z-index: 1;
     transition: 2s;
   }
@@ -273,20 +289,21 @@ body {
     display: block;
     position: absolute;
     top: 30%;
-    height: 70%;
-    width: 50%;
-    right: 0;
+    height: 60%;
+    width: 20%;
+    right: 20%;
     transform-style: preserve-3d;
     z-index: 1;
     transition: 1s;
+    pointer-events: none;
   }
 
   .jobImgPos2 {
     display: block;
     position: absolute;
     top: 100%;
-    height: 120%;
-    width: 90%;
+    height: 100%;
+    width: 30%;
     left: 50%;
     transform-style: preserve-3d;
     transform: translate(-50%, -50%);
@@ -299,7 +316,7 @@ body {
     position: absolute;
     top: 30%;
     height: 70%;
-    width: 50%;
+    width: 20%;
     left: 0;
     transform-style: preserve-3d;
     z-index: 1;
@@ -312,13 +329,14 @@ body {
   .friendImgPosdebase {
     display: block;
     position: absolute;
-    top: 40%;
+    top: 35%;
     height: 65%;
-    width: 35%;
+    width: 15%;
     transform-style: preserve-3d;
-    left: 0;
+    left: 20%;
     z-index: 1;
     transition: 1s;
+    pointer-events: none;
   }
 
   .friendshipImgPos2 {
@@ -327,9 +345,9 @@ body {
     top: 40%;
     top: 30%;
     height: 75%;
-    width: 35%;
+    width: 15%;
     transform-style: preserve-3d;
-    right: 0;
+    right: 25%;
     z-index: 1;
     transition: 1s;
   }
@@ -346,4 +364,11 @@ body {
     z-index: 2;
     transition: 1s;
   }
+}
+
+.themeChoiceSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

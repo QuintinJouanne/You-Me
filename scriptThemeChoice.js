@@ -116,16 +116,16 @@ precedant.addEventListener('click', slidesuivante);
 
 const jobChoice = document.getElementById('jobChoice');
 const loveChoice = document.getElementById('loveChoice');
-const friendChoice = document.getElementById('card friend');
+const friendChoice = document.getElementById('friendChoice');
 jobChoice.addEventListener('click', () => {
   localStorage.setItem('theme', 'job');
-  window.location.href = 'https://twitter.com/';
+  window.location.href = 'IdentificationWork.html';
 });
 loveChoice.addEventListener('click', () => {
   localStorage.setItem('theme', 'love');
-  window.location.href = 'https://www.facebook.com/';
+  window.location.href = 'IdentifiicationLove.html';
 });
 friendChoice.addEventListener('click', () => {
   localStorage.setItem('theme', 'friend');
-  window.location.href = 'https://www.google.com/';
+  window.location.href = 'IdentificationFriends.html';
 });
