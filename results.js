@@ -43,19 +43,19 @@ if (answersPlayerOne && answersPlayerTwo) {
         text: 'Sincérement, adoptez chacun un animal de compagnie serait une idée plus judicieuse.',
         image: 'images/tenor (1).gif',
         title: 'IM-PO-SSI-BLE',
-        background: 'img/Bg-rouge.png',
+        background: '/img/Bg-rouge-new.png',
       },
       mediumCompat: {
         text: 'Revez pas, ca va pas durer plus longtemps...',
         image: 'https://media.giphy.com/media/26xBRiIYbyjCzYMAU/giphy.gif',
         title: "l'amour dure 3ans",
-        background: 'img/Bg-rouge.png',
+        background: '/img/Bg-rouge-new.png',
       },
       hightCompat: {
         text: 'Félicitations ! Vous venez de rencontrer votre âme soeur, ne nous remerciez pas.',
         image: 'https://media.giphy.com/media/vDkkDM5m8ITmM/giphy.gif',
         title: 'Le début d"une histoire',
-        background: 'img/Bg-rouge.png',
+        background: '/img/Bg-rouge-new.png',
       },
     },
     friend: {
@@ -63,16 +63,19 @@ if (answersPlayerOne && answersPlayerTwo) {
         text: 'Vous vous detestez, vous ne le saviez juste pas encore.',
         image: 'https://media.giphy.com/media/VfyC5j7sR4cso/giphy.gif',
         title: 'jamais amis, surement ennemis',
+        background: '/img/Bg-marron-new.png',
       },
       mediumCompat: {
         text: 'Intéressant, tu viens de rencontrer le bon pote qui rendra ton meilleur ou ta meilleure amie vert de jalousie',
         image: 'https://media.giphy.com/media/10LKovKon8DENq/giphy.gif',
-        title: 'Un bon pote de sirées',
+        title: 'Un bon pote de soirées',
+        background: '/img/Bg-marron-new.png',
       },
       hightCompat: {
         text: 'Vous avez le potentiel pour devenir les meileurs amis du monde !',
         image: 'https://media.giphy.com/media/YQ4l2RLuzco5IwD4dR/giphy.gif',
         title: 'Hey Bro',
+        background: '/img/Bg-marron-new.png',
       },
     },
     work: {
@@ -80,16 +83,19 @@ if (answersPlayerOne && answersPlayerTwo) {
         text: 'Pour le bien de la promotion, merci de ne JAMAIS travailler ensemble !',
         image: 'https://media.giphy.com/media/i4q6NMfWILJKze9anr/giphy.gif',
         title: 'Le ou la collegue que tu deteste',
+        background: '/img/Bg-bleu-new.png',
       },
       mediumCompat: {
         text: "Collaboration potentiellement interessante, cependant pensez à faire des pauses lorsque l'envie de secouer votre collègue se fera ressentir.",
         image: 'https://media.giphy.com/media/3o6ZsVGSlpm2PvxkUo/giphy.gif',
         title: 'A petite dose',
+        background: '/img/Bg-bleu-new.png',
       },
       hightCompat: {
         text: 'Tout comme les Avengers, les Totally Spies ou bien Benzema et Mbappe, vous êtes fait pour collaborer ensemble !',
         image: 'https://media.giphy.com/media/rj12FejFUysTK/giphy.gif',
         title: 'Une vraie équipe de choc !',
+        background: '/img/Bg-bleu-new.png',
       },
     },
   };
@@ -119,6 +125,5 @@ if (answersPlayerOne && answersPlayerTwo) {
   const contentGif = document.getElementById('gif');
   contentGif.src = resultObject.image;
 
-  const contentBg = document.getElementById('backGround');
-  contentBg.background = resultObject.background;
+  document.body.style.backgroundImage = `url(${resultObject.background})`;
 }
