@@ -64,7 +64,7 @@ body {
   background-color: var(--main-button-color-work);
   font-family: 'Fredoka', sans-serif;
   color: #ffffff;
-  font-size: large;
+  font-size: 20px;
   width: 70%;
   height: 150px;
   border-radius: 20px;
@@ -81,7 +81,7 @@ body {
   background-color: var(--main-button-color-work);
   font-family: 'Fredoka', sans-serif;
   color: #ffffff;
-  font-size: large;
+  font-size: 20px;
   width: 70%;
   height: 150px;
   border-radius: 20px;
