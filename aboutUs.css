@@ -7,15 +7,8 @@
 body {
   font-family: 'Fredoka', sans-serif;
   min-height: 100vh;
-  height: 100%;
-  width: 100%;
   background-image: url('img/Bg-all.png');
-  background-size: 100% auto;
-}
-
-.backgroundAboutUs {
-  height: 100%;
-  width: 100%;
+  background-size: cover;
 }
 
 .aboutUsSection {
@@ -27,14 +20,18 @@ body {
 .aboutUs {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  margin-top: 70px;
+  margin-top: 40px;
   color: #ffffff;
   background: #27233a;
-  width: 75%;
+  width: 85%;
   border-radius: 10px;
   padding: 15px 0px 20px 0px;
+  height: 350px;
+  border: solid;
+  border-width: 1px;
+  border-color: #ffffff;
+  border-radius: 15px;
 }
 
 .aboutUsTitle {
@@ -45,25 +42,30 @@ body {
 }
 
 .aboutUsParagraph {
-  width: 75%;
+  width: 85%;
   font-weight: 400;
   font-size: 20px;
   line-height: 25px;
+  overflow: scroll;
 }
 
 .why {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  margin-top: 70px;
+  margin-top: 20px;
   padding-bottom: 30px;
   color: #ffffff;
   background: #27233a;
-  width: 75%;
+  width: 85%;
   border-radius: 10px;
   padding: 15px 0px 20px 0px;
   margin-bottom: 50px;
+  height: 350px;
+  border: solid;
+  border-width: 1px;
+  border-color: #ffffff;
+  border-radius: 15px;
 }
 
 .whyTitle {
@@ -74,8 +76,34 @@ body {
 }
 
 .whyParagraph {
-  width: 75%;
+  width: 85%;
   font-weight: 400;
   font-size: 20px;
   line-height: 25px;
+  overflow: scroll;
+}
+
+@media screen and (min-width: 1025px) {
+  body {
+    background-image: url('img/Bg-all-deskstop.png');
+  }
+  .aboutUs {
+    width: 85%;
+    padding: 20px 0px 20px 0px;
+    height: initial;
+  }
+  .aboutUsParagraph {
+    width: 85%;
+    overflow: initial;
+  }
+  .why {
+    width: 85%;
+    padding: 20px 0px 20px 0px;
+    height: initial;
+    margin-top: 50px;
+  }
+  .whyParagraph {
+    width: 85%;
+    overflow: initial;
+  }
 }

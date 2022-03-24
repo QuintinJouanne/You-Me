@@ -3,16 +3,22 @@
 body {
   background-image: url('img/Bg-rouge-new.png');
   background-size: cover;
+  background-position: center;
   font-family: 'Fredoka', sans-serif;
   min-height: 100vh;
 }
 
 /*----------Form style----------*/
+.containerBis {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 form {
   background-color: #fff;
   padding: 40px 60px;
   border-radius: 10px;
-  margin: 250px 20px 0px 20px;
+  margin: 200px 20px 0px 20px;
   border-radius: 10px;
 }
 
@@ -59,12 +65,11 @@ button a {
 }
 
 /*----------MediaQueries / Desktop----------*/
-@media screen and (min-width: 1350px) {
+@media screen and (min-width: 1025px) {
   body {
     background-image: url('img/Bg-rouge-new-deskstop.png');
-    background-size: cover;
   }
   form {
-    margin: 350px 500px 0px 500px;
+    width: 40%;
   }
 }

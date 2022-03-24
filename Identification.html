@@ -2,12 +2,11 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="question.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>You & Me</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/png" href="img/cple.png" />
-    <title>You & Me</title>
+    <link rel="stylesheet" href="IDFriends.css" />
   </head>
   <body>
     <nav class="navbar" role="navigation">
@@ -33,32 +32,36 @@
         <span class="bar"></span>
       </button>
     </nav>
-
-    <div class="displayNone">
-      <div class="progressBarContainer">
-        <div id="uploadProgressBar" class="progress-bar"></div>
-      </div>
-
-      <div class="question-container">
-        <p id="questionText">Selon vous, choisir un métier, c'est :</p>
-      </div>
-
-      <div class="containerAB">
-        <div class="boutonAB">
-          <button id="bouton1" class="buttonA">
-            S'assurer des débouchés, un emploi.
-          </button>
-          <button id="bouton2" class="buttonB">Réaliser tous ses rêves.</button>
+    <div class="displayNone containerBis">
+      <form action="questions.html">
+        <h1>S'identifier</h1>
+        <div class="inputs">
+          <label id="lastName" for="name">Nom</label>
+          <input
+            id="inputLastName"
+            type="text"
+            placeholder="Nom"
+            name="name"
+            required
+          />
         </div>
-      </div>
-
-      <div class="bouton-next">
-        <button class="next">
-          <img id="nextBtn" src="chevron-right.png" alt="chevron next" />
-        </button>
-      </div>
+        <div class="inputs">
+          <label id="firstName" for="firstname">Prénom</label>
+          <input
+            id="inputFirstName"
+            type="text"
+            placeholder="Prenom"
+            name="firstname"
+            required
+          />
+        </div>
+        <div>
+          <button id="button" type="submit">C'est parti !!</button>
+        </div>
+      </form>
     </div>
+
+    <script src="ID.js"></script>
     <script src="menuBurger.js"></script>
-    <script src="question.js"></script>
   </body>
 </html>

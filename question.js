@@ -14,10 +14,24 @@ const bouton1 = document.getElementById('bouton1');
 const bouton2 = document.getElementById('bouton2');
 const nextBtnElement = document.getElementById('nextBtn');
 
+const currentPlayer = localStorage.getItem('currentPlayer');
+
+let currentAnswer = null;
+
+bouton1.addEventListener('click', () => {
+  currentAnswer = 'A';
+});
+
+bouton2.addEventListener('click', () => {
+  currentAnswer = 'B';
+});
+
 const theme = localStorage.getItem('theme');
 
+const answers = [];
+
 const questionsByTheme = {
-  job: [
+  work: [
     {
       question: "Selon vous, choisir un métier, c'est :",
       answer: {
@@ -253,5 +267,24 @@ updatePageQuestion(questionList[currentIndex]);
 
 nextBtnElement.addEventListener('click', () => {
   currentIndex += 1;
-  updatePageQuestion(questionList[currentIndex]);
+
+  if (currentIndex < questionList.length) {
+    updatePageQuestion(questionList[currentIndex]);
+  }
+
+  answers.push(currentAnswer);
+
+  localStorage.setItem(
+    currentPlayer === 'one' ? 'answersPlayerOne' : 'answersPlayerTwo',
+    JSON.stringify(answers)
+  );
+
+  if (currentIndex === questionList.length) {
+    if (currentPlayer === 'one') {
+      localStorage.setItem('currentPlayer', 'two');
+      window.location.href = 'Identification.html';
+    } else {
+      window.location.href = 'results.html';
+    }
+  }
 });
