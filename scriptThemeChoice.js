@@ -110,9 +110,8 @@ function removeOriginPos() {
 
 suivant.addEventListener('click', slidesuivante);
 suivant.addEventListener('click', removeOriginPos);
-precedant.addEventListener('click', slidesuivante);
 
-//
+// Relie les images aux bonnes pages
 
 const jobChoice = document.getElementById('jobChoice');
 const loveChoice = document.getElementById('loveChoice');
@@ -124,8 +123,11 @@ jobChoice.addEventListener('click', () => {
 loveChoice.addEventListener('click', () => {
   localStorage.setItem('theme', 'love');
   window.location.href = 'IdentifiicationLove.html';
+  console.log('hello world');
 });
 friendChoice.addEventListener('click', () => {
   localStorage.setItem('theme', 'friend');
   window.location.href = 'IdentificationFriends.html';
 });
+
+// Gère le local storage
