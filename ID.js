@@ -29,7 +29,7 @@ function validation(event) {
 formValid.addEventListener('click', validation);
 
 const theme = localStorage.getItem('theme');
-const contentIdentification = {
+const contentToDisplay = {
   love: {
     background: '/img/Bg-rouge-new.png',
   },
@@ -41,5 +41,5 @@ const contentIdentification = {
   },
 };
 
-const IdObject = contentIdentification[theme];
-document.body.style.backgroundImage = `url(${IdObject.background})`;
+const resultObject = contentToDisplay[theme];
+document.body.style.backgroundImage = `url(${resultObject.background})`;
