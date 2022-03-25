@@ -1,34 +1,65 @@
-const themes = localStorage.getItem('theme');
-
 // PROGRESS BAR //
-
+const progressBarContainer = document.querySelector('.progressBarContainer');
 const progressBar = document.querySelector('.progress-bar');
-const uploadProgressBar = document.getElementById('uploadProgressBar');
-
-const upload = () => {
-  progressBar.setAttribute('uploadProgressBar', 'play-animation');
-};
+let pourcentage = 0;
+progressBar.style.width = '0%';
 
 // ARRAY QUESTIONS WORK //
-
 const questionTextElement = document.getElementById('questionText');
 const bouton1 = document.getElementById('bouton1');
 const bouton2 = document.getElementById('bouton2');
 const nextBtnElement = document.getElementById('nextBtn');
 
+const theme = localStorage.getItem('theme');
 const currentPlayer = localStorage.getItem('currentPlayer');
+
+const contentToDisplay = {
+  work: {
+    background: '/img/Bg-bleu-new.png',
+    button: '#3980e3',
+    buttonsSelected: '#09377b',
+  },
+  love: {
+    background: '/img/Bg-rouge-new.png',
+    button: '#e33950',
+    buttonsSelected: '#7b0909',
+  },
+  friend: {
+    background: '/img/Bg-marron-new.png',
+    button: '#e38639',
+    buttonsSelected: '#9d581f',
+  },
+};
+
+const resultObject = contentToDisplay[theme];
+
+document.body.style.backgroundImage = `url(${resultObject.background})`;
+progressBarContainer.style.backgroundColor = resultObject.button;
+progressBar.style.backgroundColor = resultObject.buttonsSelected;
+bouton1.style.backgroundColor = resultObject.button;
+bouton2.style.backgroundColor = resultObject.button;
 
 let currentAnswer = null;
 
 bouton1.addEventListener('click', () => {
-  currentAnswer = 'A';
+  if (currentAnswer === null) {
+    currentAnswer = 'A';
+    bouton1.style.backgroundColor = resultObject.buttonsSelected;
+  } else if (currentAnswer === 'A') {
+    currentAnswer = null;
+    bouton1.style.backgroundColor = resultObject.button;
+  }
 });
 
 bouton2.addEventListener('click', () => {
-  currentAnswer = 'B';
+  if (currentAnswer === null) {
+    currentAnswer = 'B';
+    bouton2.style.backgroundColor = resultObject.buttonsSelected;
+  } else if (currentAnswer === 'B') {
+    currentAnswer = null;
+    bouton2.style.backgroundColor = resultObject.button;
+  }
 });
-
-const theme = localStorage.getItem('theme');
 
 const answers = [];
 
@@ -268,30 +299,35 @@ function updatePageQuestion(currentQuestion) {
 updatePageQuestion(questionList[currentIndex]);
 
 nextBtnElement.addEventListener('click', () => {
-  currentIndex += 1;
-
-  if (currentIndex < questionList.length) {
-    updatePageQuestion(questionList[currentIndex]);
-  }
-
-  answers.push(currentAnswer);
-
-  localStorage.setItem(
-    currentPlayer === 'one' ? 'answersPlayerOne' : 'answersPlayerTwo',
-    JSON.stringify(answers)
-  );
-
-  if (currentIndex === questionList.length) {
-    if (currentPlayer === 'one') {
-      localStorage.setItem('currentPlayer', 'two');
-      window.location.href = 'Identification.html';
-    } else {
-      window.location.href = 'results.html';
+  if (currentAnswer === 'A' || currentAnswer === 'B') {
+    if (pourcentage < 100) {
+      pourcentage = pourcentage + 10;
+      progressBar.style.width = pourcentage + '%';
     }
+
+    currentIndex += 1;
+
+    if (currentIndex < questionList.length) {
+      updatePageQuestion(questionList[currentIndex]);
+    }
+
+    answers.push(currentAnswer);
+
+    localStorage.setItem(
+      currentPlayer === 'one' ? 'answersPlayerOne' : 'answersPlayerTwo',
+      JSON.stringify(answers)
+    );
+
+    if (currentIndex === questionList.length) {
+      if (currentPlayer === 'one') {
+        localStorage.setItem('currentPlayer', 'two');
+        window.location.href = 'Identification.html';
+      } else {
+        window.location.href = 'results.html';
+      }
+    }
+    currentAnswer = null;
+    bouton1.style.backgroundColor = resultObject.button;
+    bouton2.style.backgroundColor = resultObject.button;
   }
 });
-
-
-
-const resultObject
-document.body.style.backgroundImage = `url(${resultObject.background})`;
