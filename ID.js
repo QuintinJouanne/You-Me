@@ -27,3 +27,19 @@ function validation(event) {
   );
 }
 formValid.addEventListener('click', validation);
+
+const theme = localStorage.getItem('theme');
+const contentToDisplay = {
+  love: {
+    background: '/img/Bg-rouge-new.png',
+  },
+  friend: {
+    background: '/img/Bg-marron-new.png',
+  },
+  work: {
+    background: '/img/Bg-bleu-new.png',
+  },
+};
+
+const resultObject = contentToDisplay[theme];
+document.body.style.backgroundImage = `url(${resultObject.background})`;
